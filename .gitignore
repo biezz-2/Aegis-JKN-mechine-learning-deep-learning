@@ -45,15 +45,16 @@ ENV/
 
 # Jupyter Notebooks
 .ipynb_checkpoints/
-*.ipynb
 
 # Data
-datasets/*.csv
-datasets/*.json
 datasets/*.xlsx
+!datasets/claims_300_v2.1.csv
+!datasets/claims_db.json
+!datasets/dataset_db.json
 !datasets/README.md
 
-# Logs
+# Temporary and log files
+*.tmp
 *.log
 logs/
 
@@ -64,12 +65,10 @@ Thumbs.db
 # Notion data
 notion_*.json
 
-# ML/DL Artifacts
-models/
+# ML/DL Large Checkpoints
 checkpoints/
-*.pth
 *.pkl
-*.pt
+!backend/models/mhgsl_model.pth
 
 # Node
 node_modules/

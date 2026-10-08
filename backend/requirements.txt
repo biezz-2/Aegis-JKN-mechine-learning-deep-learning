@@ -25,6 +25,7 @@ pydantic-settings>=2.1.0
 
 # OASIS Integration
 camel-oasis>=0.2.0
+mcp<2
 openai>=1.0.0
 asyncio>=3.4.3
 

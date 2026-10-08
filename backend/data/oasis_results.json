@@ -1,0 +1,882 @@
+{
+  "model_used": false,
+  "model_name": "Autonomous OASIS Rule/GCN Engine",
+  "simulations": {
+    "phantom_billing": {
+      "simulation_type": "phantom_billing",
+      "num_agents": 50,
+      "num_steps": 5,
+      "fraud_claims": [
+        {
+          "step": 0,
+          "agent_id": "agent_phantom_0",
+          "claim_id": "PHANTOM_0_0",
+          "faskes_id": "RS_C",
+          "dokter_id": "D01",
+          "pasien_id": "P05",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_phantom_1",
+          "claim_id": "PHANTOM_0_1",
+          "faskes_id": "RS_C",
+          "dokter_id": "D02",
+          "pasien_id": "P06",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_phantom_2",
+          "claim_id": "PHANTOM_0_2",
+          "faskes_id": "RS_C",
+          "dokter_id": "D03",
+          "pasien_id": "P07",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_phantom_3",
+          "claim_id": "PHANTOM_0_3",
+          "faskes_id": "RS_C",
+          "dokter_id": "D04",
+          "pasien_id": "P08",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_phantom_4",
+          "claim_id": "PHANTOM_0_4",
+          "faskes_id": "RS_C",
+          "dokter_id": "D05",
+          "pasien_id": "P09",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_phantom_0",
+          "claim_id": "PHANTOM_1_0",
+          "faskes_id": "RS_C",
+          "dokter_id": "D01",
+          "pasien_id": "P05",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_phantom_1",
+          "claim_id": "PHANTOM_1_1",
+          "faskes_id": "RS_C",
+          "dokter_id": "D02",
+          "pasien_id": "P06",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_phantom_2",
+          "claim_id": "PHANTOM_1_2",
+          "faskes_id": "RS_C",
+          "dokter_id": "D03",
+          "pasien_id": "P07",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_phantom_3",
+          "claim_id": "PHANTOM_1_3",
+          "faskes_id": "RS_C",
+          "dokter_id": "D04",
+          "pasien_id": "P08",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_phantom_4",
+          "claim_id": "PHANTOM_1_4",
+          "faskes_id": "RS_C",
+          "dokter_id": "D05",
+          "pasien_id": "P09",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_phantom_0",
+          "claim_id": "PHANTOM_2_0",
+          "faskes_id": "RS_C",
+          "dokter_id": "D01",
+          "pasien_id": "P05",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_phantom_1",
+          "claim_id": "PHANTOM_2_1",
+          "faskes_id": "RS_C",
+          "dokter_id": "D02",
+          "pasien_id": "P06",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_phantom_2",
+          "claim_id": "PHANTOM_2_2",
+          "faskes_id": "RS_C",
+          "dokter_id": "D03",
+          "pasien_id": "P07",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_phantom_3",
+          "claim_id": "PHANTOM_2_3",
+          "faskes_id": "RS_C",
+          "dokter_id": "D04",
+          "pasien_id": "P08",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_phantom_4",
+          "claim_id": "PHANTOM_2_4",
+          "faskes_id": "RS_C",
+          "dokter_id": "D05",
+          "pasien_id": "P09",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_phantom_0",
+          "claim_id": "PHANTOM_3_0",
+          "faskes_id": "RS_C",
+          "dokter_id": "D01",
+          "pasien_id": "P05",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_phantom_1",
+          "claim_id": "PHANTOM_3_1",
+          "faskes_id": "RS_C",
+          "dokter_id": "D02",
+          "pasien_id": "P06",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_phantom_2",
+          "claim_id": "PHANTOM_3_2",
+          "faskes_id": "RS_C",
+          "dokter_id": "D03",
+          "pasien_id": "P07",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_phantom_3",
+          "claim_id": "PHANTOM_3_3",
+          "faskes_id": "RS_C",
+          "dokter_id": "D04",
+          "pasien_id": "P08",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_phantom_4",
+          "claim_id": "PHANTOM_3_4",
+          "faskes_id": "RS_C",
+          "dokter_id": "D05",
+          "pasien_id": "P09",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_phantom_0",
+          "claim_id": "PHANTOM_4_0",
+          "faskes_id": "RS_C",
+          "dokter_id": "D01",
+          "pasien_id": "P05",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_phantom_1",
+          "claim_id": "PHANTOM_4_1",
+          "faskes_id": "RS_C",
+          "dokter_id": "D02",
+          "pasien_id": "P06",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_phantom_2",
+          "claim_id": "PHANTOM_4_2",
+          "faskes_id": "RS_C",
+          "dokter_id": "D03",
+          "pasien_id": "P07",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_phantom_3",
+          "claim_id": "PHANTOM_4_3",
+          "faskes_id": "RS_C",
+          "dokter_id": "D04",
+          "pasien_id": "P08",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_phantom_4",
+          "claim_id": "PHANTOM_4_4",
+          "faskes_id": "RS_C",
+          "dokter_id": "D05",
+          "pasien_id": "P09",
+          "procedure": "81.52 - Hemiarthroplasty",
+          "amount": 44750000,
+          "is_fraud": true,
+          "pattern": "Layanan fiktif tanpa kehadiran fisik"
+        }
+      ],
+      "detection_rate": 0.92,
+      "agent_logs": [
+        "[Oasis Environment] Memulai siklus eksekusi dunia otonom (Skenario: phantom_billing).",
+        "[Agent Pasien (P2)] Pasien terdeteksi tidak aktif di database kunjungan (Status: Di Rumah, Tanpa Kedatangan).",
+        "[Agent Dokter (D2)] Menghasilkan tindakan fiktif: '81.52 - Hemiarthroplasty Panggul' untuk P2.",
+        "[Agent RS (RS_C)] Mengajukan klaim Rp 44.750.000 tanpa tanda tangan kehadiran fisik pasien.",
+        "[Oasis Evaluator GCN] Mendeteksi isolasi node Pasien di Feature Graph (A_feat). Nilai anomali: 0.9900",
+        "[Oasis Decision] Hasil klasifikasi: FRAUD_PHANTOM Terdeteksi (99.0%)"
+      ],
+      "evaluator_score": 0.99
+    },
+    "upcoding": {
+      "simulation_type": "upcoding",
+      "num_agents": 50,
+      "num_steps": 5,
+      "fraud_claims": [
+        {
+          "step": 0,
+          "agent_id": "agent_upcode_0",
+          "claim_id": "UPCODE_0_0",
+          "faskes_id": "RS_A",
+          "dokter_id": "D01",
+          "pasien_id": "P01",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_upcode_1",
+          "claim_id": "UPCODE_0_1",
+          "faskes_id": "RS_A",
+          "dokter_id": "D02",
+          "pasien_id": "P02",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_upcode_2",
+          "claim_id": "UPCODE_0_2",
+          "faskes_id": "RS_A",
+          "dokter_id": "D03",
+          "pasien_id": "P03",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_upcode_3",
+          "claim_id": "UPCODE_0_3",
+          "faskes_id": "RS_A",
+          "dokter_id": "D04",
+          "pasien_id": "P04",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 0,
+          "agent_id": "agent_upcode_4",
+          "claim_id": "UPCODE_0_4",
+          "faskes_id": "RS_A",
+          "dokter_id": "D05",
+          "pasien_id": "P05",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_upcode_0",
+          "claim_id": "UPCODE_1_0",
+          "faskes_id": "RS_A",
+          "dokter_id": "D01",
+          "pasien_id": "P01",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_upcode_1",
+          "claim_id": "UPCODE_1_1",
+          "faskes_id": "RS_A",
+          "dokter_id": "D02",
+          "pasien_id": "P02",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_upcode_2",
+          "claim_id": "UPCODE_1_2",
+          "faskes_id": "RS_A",
+          "dokter_id": "D03",
+          "pasien_id": "P03",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_upcode_3",
+          "claim_id": "UPCODE_1_3",
+          "faskes_id": "RS_A",
+          "dokter_id": "D04",
+          "pasien_id": "P04",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 1,
+          "agent_id": "agent_upcode_4",
+          "claim_id": "UPCODE_1_4",
+          "faskes_id": "RS_A",
+          "dokter_id": "D05",
+          "pasien_id": "P05",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_upcode_0",
+          "claim_id": "UPCODE_2_0",
+          "faskes_id": "RS_A",
+          "dokter_id": "D01",
+          "pasien_id": "P01",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_upcode_1",
+          "claim_id": "UPCODE_2_1",
+          "faskes_id": "RS_A",
+          "dokter_id": "D02",
+          "pasien_id": "P02",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_upcode_2",
+          "claim_id": "UPCODE_2_2",
+          "faskes_id": "RS_A",
+          "dokter_id": "D03",
+          "pasien_id": "P03",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_upcode_3",
+          "claim_id": "UPCODE_2_3",
+          "faskes_id": "RS_A",
+          "dokter_id": "D04",
+          "pasien_id": "P04",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 2,
+          "agent_id": "agent_upcode_4",
+          "claim_id": "UPCODE_2_4",
+          "faskes_id": "RS_A",
+          "dokter_id": "D05",
+          "pasien_id": "P05",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_upcode_0",
+          "claim_id": "UPCODE_3_0",
+          "faskes_id": "RS_A",
+          "dokter_id": "D01",
+          "pasien_id": "P01",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_upcode_1",
+          "claim_id": "UPCODE_3_1",
+          "faskes_id": "RS_A",
+          "dokter_id": "D02",
+          "pasien_id": "P02",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_upcode_2",
+          "claim_id": "UPCODE_3_2",
+          "faskes_id": "RS_A",
+          "dokter_id": "D03",
+          "pasien_id": "P03",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_upcode_3",
+          "claim_id": "UPCODE_3_3",
+          "faskes_id": "RS_A",
+          "dokter_id": "D04",
+          "pasien_id": "P04",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 3,
+          "agent_id": "agent_upcode_4",
+          "claim_id": "UPCODE_3_4",
+          "faskes_id": "RS_A",
+          "dokter_id": "D05",
+          "pasien_id": "P05",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_upcode_0",
+          "claim_id": "UPCODE_4_0",
+          "faskes_id": "RS_A",
+          "dokter_id": "D01",
+          "pasien_id": "P01",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_upcode_1",
+          "claim_id": "UPCODE_4_1",
+          "faskes_id": "RS_A",
+          "dokter_id": "D02",
+          "pasien_id": "P02",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_upcode_2",
+          "claim_id": "UPCODE_4_2",
+          "faskes_id": "RS_A",
+          "dokter_id": "D03",
+          "pasien_id": "P03",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_upcode_3",
+          "claim_id": "UPCODE_4_3",
+          "faskes_id": "RS_A",
+          "dokter_id": "D04",
+          "pasien_id": "P04",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        },
+        {
+          "step": 4,
+          "agent_id": "agent_upcode_4",
+          "claim_id": "UPCODE_4_4",
+          "faskes_id": "RS_A",
+          "dokter_id": "D05",
+          "pasien_id": "P05",
+          "actual_procedure": "Pemeriksaan Ringan",
+          "billed_procedure": "00.66 - PCI Stent Jantung",
+          "amount": 52300000,
+          "is_fraud": true,
+          "pattern": "Penagihan prosedur kompleks tidak sebanding dengan keluhan"
+        }
+      ],
+      "detection_rate": 0.94,
+      "agent_logs": [
+        "[Oasis Environment] Memulai siklus eksekusi dunia otonom (Skenario: upcoding).",
+        "[Agent Pasien (P1)] Mengirim keluhan medis: 'Nyeri ulu hati & batuk ringan' ke Environment.",
+        "[Agent Dokter (D1)] Mengamati input Pasien. Menggunakan tindakan oportunistik: Mencatat '00.66 - PCI Stent Jantung Koroner' (Rp 52.300.000).",
+        "[Agent RS (RS_A)] Menerima klaim dari D1. Meneruskan dokumen klaim ke sistem JKN BPJS V-Claim.",
+        "[Oasis Evaluator GCN] Menganalisis relasi meta-path Dokter-RS-Pasien-Tindakan. Nilai anomali: 0.9900",
+        "[Oasis Decision] Hasil klasifikasi: FRAUD_UPCODING Terdeteksi (99.0%)"
+      ],
+      "evaluator_score": 0.99
+    },
+    "collusion": {
+      "simulation_type": "collusion",
+      "num_agents": 50,
+      "num_steps": 5,
+      "fraud_networks": [
+        {
+          "step": 0,
+          "network_id": "SYND_0_0",
+          "participants": [
+            "D01",
+            "RS_A",
+            "P01",
+            "P02"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 0,
+          "network_id": "SYND_0_1",
+          "participants": [
+            "D02",
+            "RS_A",
+            "P02",
+            "P03"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 0,
+          "network_id": "SYND_0_2",
+          "participants": [
+            "D03",
+            "RS_A",
+            "P03",
+            "P04"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 1,
+          "network_id": "SYND_1_0",
+          "participants": [
+            "D01",
+            "RS_A",
+            "P01",
+            "P02"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 1,
+          "network_id": "SYND_1_1",
+          "participants": [
+            "D02",
+            "RS_A",
+            "P02",
+            "P03"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 1,
+          "network_id": "SYND_1_2",
+          "participants": [
+            "D03",
+            "RS_A",
+            "P03",
+            "P04"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 2,
+          "network_id": "SYND_2_0",
+          "participants": [
+            "D01",
+            "RS_A",
+            "P01",
+            "P02"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 2,
+          "network_id": "SYND_2_1",
+          "participants": [
+            "D02",
+            "RS_A",
+            "P02",
+            "P03"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 2,
+          "network_id": "SYND_2_2",
+          "participants": [
+            "D03",
+            "RS_A",
+            "P03",
+            "P04"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 3,
+          "network_id": "SYND_3_0",
+          "participants": [
+            "D01",
+            "RS_A",
+            "P01",
+            "P02"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 3,
+          "network_id": "SYND_3_1",
+          "participants": [
+            "D02",
+            "RS_A",
+            "P02",
+            "P03"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 3,
+          "network_id": "SYND_3_2",
+          "participants": [
+            "D03",
+            "RS_A",
+            "P03",
+            "P04"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 4,
+          "network_id": "SYND_4_0",
+          "participants": [
+            "D01",
+            "RS_A",
+            "P01",
+            "P02"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 4,
+          "network_id": "SYND_4_1",
+          "participants": [
+            "D02",
+            "RS_A",
+            "P02",
+            "P03"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        },
+        {
+          "step": 4,
+          "network_id": "SYND_4_2",
+          "participants": [
+            "D03",
+            "RS_A",
+            "P03",
+            "P04"
+          ],
+          "total_amount": 104600000,
+          "is_fraud": true,
+          "pattern": "Subgraf padat anomali kolusi multi-pihak"
+        }
+      ],
+      "detection_rate": 0.88,
+      "agent_logs": [
+        "[Oasis Environment] Memulai siklus eksekusi dunia otonom (Skenario: collusion).",
+        "[Agent Sindikat (SYND-01)] Terdeteksi jejaring kolusi: Dokter (D1, D2) + RS_A + Pasien (P1, P2, P3).",
+        "[Agent Dokter (D1)] Mengajukan klaim berulang dengan variasi waktu dan biaya seragam.",
+        "[Agent RS (RS_A)] Memvalidasi dan menerbitkan tagihan kolektif.",
+        "[Oasis Evaluator GCN] Mendeteksi subgraf padat anomali pada Saluran Semantik & Topologi. Nilai anomali: 0.9900",
+        "[Oasis Decision] Hasil klasifikasi: FRAUD_COLLUSION Terdeteksi (99.0%)"
+      ],
+      "evaluator_score": 0.99
+    }
+  },
+  "summary": {
+    "total_fraud_claims": 50,
+    "total_fraud_networks": 15,
+    "average_detection_rate": 0.9133
+  }
+}

@@ -66,17 +66,61 @@ Aegis-JKN-mechine-learning-deep-learning/
 │       │   └── real-time/       # Real-time metrics
 │       └── lib/
 │           └── api-client.ts    # Backend API client
-├── docs/                        # Documentation
+├── colab/                       # Google Colab Artifacts & Execution Reports
+│   ├── Aegis_JKN_FIXX.ipynb     # Notebook Colab dengan output eksekusi lengkap (Ollama & Mistral 24B)
+│   ├── dashboard-aegis-jkn.html # Export Dashboard Interaktif (Graph Canvas & Metrics)
+│   ├── Hasil simulasi dari 300 dataset notion.pdf # Laporan audit simulasi 300 dataset
+│   └── payload-aegis-jkn.json   # Payload dump klaim terverifikasi
+├── docs/                        # Dokumentasi teknis
 │   ├── architecture.md
 │   ├── api-reference.md
-│   ├── oasis-integration.md
 │   └── deployment-guide.md
-├── notebooks/                   # Jupyter notebooks
-├── datasets/                     # Sample datasets
+├── notebooks/                   # Jupyter Notebooks & Pipeline Builder
+│   ├── Aegis-JKN.ipynb          # Notebook all-in-one lengkap (MHGSL + OASIS + Evaluasi)
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_model_training.ipynb
+│   ├── 03_oasis_simulation.ipynb
+│   ├── build_notebook.py        # Generator mandiri notebook Aegis-JKN.ipynb
+│   └── validate_notebook.py     # Validator spesifikasi teknis notebook
+├── datasets/                    # Dataset Benchmark
+│   ├── claims_300_v2.1.csv      # 300 klaim terverifikasi v2.1 (9 sindikat fraud)
+│   ├── dataset_db.json
+│   └── claims_db.json
+├── run_simulation.bat           # 1-klik simulasi mandiri (Windows)
+├── start_backend.bat            # 1-klik start FastAPI server (Windows)
+├── run_windows_simulation.py    # Runner simulasi native Windows
 └── README.md
 ```
 
-## 🚀 Quick Start
+## 🪟 Panduan Menjalankan Simulasi di Windows (Native Windows Guide)
+
+Simulasi dapat dijalankan langsung di lingkungan Windows tanpa Docker atau WSL:
+
+### Opsi A: Eksekusi 1-Klik (Batch File)
+1. Jalankan simulasi mandiri (Pipeline + MHGSL + OASIS + Benchmark):
+   Double-click atau jalankan via CMD:
+   ```cmd
+   run_simulation.bat
+   ```
+2. Jalankan FastAPI Backend Server:
+   Double-click atau jalankan via CMD:
+   ```cmd
+   start_backend.bat
+   ```
+   Server akan aktif di `http://127.0.0.1:8000` dengan Swagger Docs di `http://127.0.0.1:8000/docs`.
+
+### Opsi B: PowerShell / Terminal Command Line
+```powershell
+# 1. Jalankan simulasi penuh
+backend\venv\Scripts\python.exe run_windows_simulation.py
+
+# 2. Jalankan FastAPI Backend
+backend\venv\Scripts\python.exe -m uvicorn backend.src.api.main:app --host 127.0.0.1 --port 8000 --reload
+```
+
+---
+
+## 🚀 Quick Start (Manual / Multi-Platform)
 
 ### Prerequisites
 

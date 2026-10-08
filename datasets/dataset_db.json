@@ -1,0 +1,5242 @@
+{
+  "object": "list",
+  "results": [
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8111-8173-e20f75996fcb",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://link.springer.com/article/10.1007/s10462-026-11516-7"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SHapley Additive exPlanations menghitung kontribusi marjinal tiap fitur terhadap prediksi \u2014 dasbor auditor menampilkan alasan di balik skor fraud (contoh: probabilitas 92% didorong durasi rawat +35% dan implan mahal +40%).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SHapley Additive exPlanations menghitung kontribusi marjinal tiap fitur terhadap prediksi \u2014 dasbor auditor menampilkan alasan di balik skor fraud (contoh: probabilitas 92% didorong durasi rawat +35% dan implan mahal +40%).",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Merendam alert fatigue: tim fraud dapat menghabiskan \u00b170% waktu untuk alarm palsu; XAI memungkinkan penalaran audit & keputusan yang dapat dipertanggungjawabkan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Merendam alert fatigue: tim fraud dapat menghabiskan \u00b170% waktu untuk alarm palsu; XAI memungkinkan penalaran audit & keputusan yang dapat dipertanggungjawabkan.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SLR Springer (Artificial Intelligence Review, 2026) tentang tantangan metodologis XAI fraud detection; studi triase auditor berbasis SHAP+RAG (MDPI 2025) relevan sebagai referensi purwarupa.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SLR Springer (Artificial Intelligence Review, 2026) tentang tantangan metodologis XAI fraud detection; studi triase auditor berbasis SHAP+RAG (MDPI 2025) relevan sebagai referensi purwarupa.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SHAP / Explainable AI (XAI)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SHAP / Explainable AI (XAI)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/SHAP-Explainable-AI-XAI-3f23e6031ab781118173e20f75996fcb",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8111-98ca-fa8f43a15293",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "d2d22bfe-fb8a-4efa-8a47-300a887b82d8",
+            "name": "Perlu Verifikasi",
+            "color": "red"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": null
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Proyeksi dokumen sumber: reduksi waktu telaah per berkas dari 20 menjadi 3 menit sehingga kapasitas efektif verifikasi naik dari \u00b11.000 menjadi \u00b16.700 berkas.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Proyeksi dokumen sumber: reduksi waktu telaah per berkas dari 20 menjadi 3 menit sehingga kapasitas efektif verifikasi naik dari \u00b11.000 menjadi \u00b16.700 berkas.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "2f426795-3680-4b8b-8015-657338d4ec9d",
+            "name": "Metrik & Validasi",
+            "color": "orange"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kuantifikasi dampak (slide ROI); wajib ditopang UAT & pengukuran baseline waktu riil pada pilot FKRTL.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kuantifikasi dampak (slide ROI); wajib ditopang UAT & pengukuran baseline waktu riil pada pilot FKRTL.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Asumsi internal dokumen sumber \u2014 belum ditemukan studi publik BPJS tentang durasi verifikasi rata-rata per berkas. Tampilkan sebagai proyeksi berbasis asumsi (dengan rentang sensitivitas), bukan hasil terukur.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Asumsi internal dokumen sumber \u2014 belum ditemukan studi publik BPJS tentang durasi verifikasi rata-rata per berkas. Tampilkan sebagai proyeksi berbasis asumsi (dengan rentang sensitivitas), bukan hasil terukur.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Metrik operasional: 20 menit \u2192 3 menit per berkas; kapasitas \u00d76,7",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Metrik operasional: 20 menit \u2192 3 menit per berkas; kapasitas \u00d76,7",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Metrik-operasional-20-menit-3-menit-per-berkas-kapasitas-6-7-3f23e6031ab7811198cafa8f43a15293",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8116-b69a-fbf7ca3079d2",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://ml-research.github.io/papers/fang2022dpctgan.pdf"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Conditional Tabular GAN + Differential Privacy (Fang et al., AIME 2022, Springer): membangkitkan data medis tabular sintetis yang valid secara statistik namun tidak dapat direkayasa-balik ke identitas asli.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Conditional Tabular GAN + Differential Privacy (Fang et al., AIME 2022, Springer): membangkitkan data medis tabular sintetis yang valid secara statistik namun tidak dapat direkayasa-balik ke identitas asli.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Privacy-by-design: melatih & mendemokan model tanpa data peserta riil (selaras larangan Healthkathon atas data peserta tanpa izin resmi).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Privacy-by-design: melatih & mendemokan model tanpa data peserta riil (selaras larangan Healthkathon atas data peserta tanpa izin resmi).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Paper asli terbuka di ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Paper asli terbuka di ",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "ml-research.github.io",
+                "link": {
+                  "url": "http://ml-research.github.io/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "ml-research.github.io",
+              "href": "http://ml-research.github.io/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "; pustaka implementasi dp_cgans tersedia di GitHub (sunchang0124).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "; pustaka implementasi dp_cgans tersedia di GitHub (sunchang0124).",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "DP-CTGAN \u2014 data sintetis berdiferensial privasi",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "DP-CTGAN \u2014 data sintetis berdiferensial privasi",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/DP-CTGAN-data-sintetis-berdiferensial-privasi-3f23e6031ab78116b69afbf7ca3079d2",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-811e-8f70-e0f52af0d54f",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://pasal.id/peraturan/uu/uu-no-27-tahun-2022"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Data kesehatan, biometrik, dan genetika = Data Pribadi Spesifik: persetujuan eksplisit, enkripsi mutakhir, penunjukan DPO, notifikasi kebocoran 3x24 jam. Sanksi pidana Pasal 65-66: 5-6 tahun penjara, denda hingga Rp5 miliar; sanksi administratif hingga 2% pendapatan tahunan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Data kesehatan, biometrik, dan genetika = Data Pribadi Spesifik: persetujuan eksplisit, enkripsi mutakhir, penunjukan DPO, notifikasi kebocoran 3x24 jam. Sanksi pidana Pasal 65-66: 5-6 tahun penjara, denda hingga Rp5 miliar; sanksi administratif hingga 2% pendapatan tahunan.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "fbfcacc9-715d-4258-b697-d8f1e92182ac",
+            "name": "Regulasi & Kepatuhan",
+            "color": "purple"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Privacy-by-design menyeluruh: DP-CTGAN, federated learning, HITL; larangan Healthkathon atas data peserta riil tanpa izin = risiko diskualifikasi bila dilanggar.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Privacy-by-design menyeluruh: DP-CTGAN, federated learning, HITL; larangan Healthkathon atas data peserta riil tanpa izin = risiko diskualifikasi bila dilanggar.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Teks UU (JDIH BPK; PDF Hukumonline) mengonfirmasi Pasal 66 'pidana paling lama 6 tahun' & denda Rp5 M. Lembaga PDP nasional masih dalam proses pembentukan per 2026 \u2014 narasi kepatuhan yang kuat untuk matriks risiko proposal.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Teks UU (JDIH BPK; PDF Hukumonline) mengonfirmasi Pasal 66 'pidana paling lama 6 tahun' & denda Rp5 M. Lembaga PDP nasional masih dalam proses pembentukan per 2026 \u2014 narasi kepatuhan yang kuat untuk matriks risiko proposal.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "UU No. 27/2022 (UU PDP) \u2014 data kesehatan sebagai data spesifik",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "UU No. 27/2022 (UU PDP) \u2014 data kesehatan sebagai data spesifik",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/UU-No-27-2022-UU-PDP-data-kesehatan-sebagai-data-spesifik-3f23e6031ab7811e8f70e0f52af0d54f",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8131-aeab-d54d79bf7327",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://zenodo.org/records/21717009"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Pada dataset fraud sangat tidak seimbang, AUPRC (area precision-recall) lebih informatif daripada akurasi; metrik pendamping: F1, AUROC, dan presisi pada tingkat false-positive rendah.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Pada dataset fraud sangat tidak seimbang, AUPRC (area precision-recall) lebih informatif daripada akurasi; metrik pendamping: F1, AUROC, dan presisi pada tingkat false-positive rendah.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "2f426795-3680-4b8b-8015-657338d4ec9d",
+            "name": "Metrik & Validasi",
+            "color": "orange"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Benchmark MHGSL vs XGBoost vs GNN vs hibrida dengan AUPRC sebagai metrik utama \u2014 selaras dengan praktik literatur fraud detection.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Benchmark MHGSL vs XGBoost vs GNN vs hibrida dengan AUPRC sebagai metrik utama \u2014 selaras dengan praktik literatur fraud detection.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Peer review Zenodo menekankan AUROC/AUPRC/F1 sebagai metrik primer fraud detection karena akurasi misleading pada kelas tak seimbang.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Peer review Zenodo menekankan AUROC/AUPRC/F1 sebagai metrik primer fraud detection karena akurasi misleading pada kelas tak seimbang.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Metrik ML: AUPRC sebagai metrik utama",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Metrik ML: AUPRC sebagai metrik utama",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Metrik-ML-AUPRC-sebagai-metrik-utama-3f23e6031ab78131aeabd54d79bf7327",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-813f-a9da-f862ebc85424",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": null
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Generator DP-CTGAN untuk data sintetis, baseline XGBoost + SMOTE, skema ingestion FHIR R4.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Generator DP-CTGAN untuk data sintetis, baseline XGBoost + SMOTE, skema ingestion FHIR R4.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "9d63fa63-87e9-4f75-84a2-d83d42b05f87",
+            "name": "Roadmap & Operasional",
+            "color": "brown"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Milestone konkret: dataset sintetis siap, baseline terlatih, dasbor skor fraud minimal.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Milestone konkret: dataset sintetis siap, baseline terlatih, dasbor skor fraud minimal.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Semua komponen terverifikasi secara teknis (DP-CTGAN, XGBoost, FHIR); timeline adalah rencana tim \u2014 selaraskan dengan kalender seleksi Healthkathon 2026 (pendaftaran ditutup 14 Sep 2026).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Semua komponen terverifikasi secara teknis (DP-CTGAN, XGBoost, FHIR); timeline adalah rencana tim \u2014 selaraskan dengan kalender seleksi Healthkathon 2026 (pendaftaran ditutup 14 Sep 2026).",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Fase 1 (0-3 bulan): fondasi data & baseline",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Fase 1 (0-3 bulan): fondasi data & baseline",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Fase-1-0-3-bulan-fondasi-data-baseline-3f23e6031ab7813fa9daf862ebc85424",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8153-96a1-eb905d4c7a18",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://link.springer.com/article/10.1186/s40537-025-01295-3"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Extreme Gradient Boosting \u2014 standar industri untuk klasifikasi klaim tabular: ansambel pohon sekuensial, cepat, tahan missing values, menangkap pola non-linier.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Extreme Gradient Boosting \u2014 standar industri untuk klasifikasi klaim tabular: ansambel pohon sekuensial, cepat, tahan missing values, menangkap pola non-linier.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Baseline pembanding MHGSL pada dataset sintetis; fitur per-baris klaim (tarif, LOS, demografi, kode diagnosis).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Baseline pembanding MHGSL pada dataset sintetis; fitur per-baris klaim (tarif, LOS, demografi, kode diagnosis).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Review Journal of Big Data (2025) tentang ML classifier untuk fraud kesehatan mengonfirmasi XGBoost/RF/LR sebagai pembanding standar; paper MHGSL juga memakai ketiganya sebagai classifier pembanding.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Review Journal of Big Data (2025) tentang ML classifier untuk fraud kesehatan mengonfirmasi XGBoost/RF/LR sebagai pembanding standar; paper MHGSL juga memakai ketiganya sebagai classifier pembanding.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "XGBoost sebagai baseline tabular",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "XGBoost sebagai baseline tabular",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/XGBoost-sebagai-baseline-tabular-3f23e6031ab7815396a1eb905d4c7a18",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-815d-8336-ed2bd6d6cfa4",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "d2d22bfe-fb8a-4efa-8a47-300a887b82d8",
+            "name": "Perlu Verifikasi",
+            "color": "red"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.cell.com/heliyon/fulltext/S2405-8440(24)06076-6"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Angka yang dikutip dokumen sumber: MHGSL mendominasi AUPRC hingga +20% dibanding baseline XGBoost dan menekan false negatives hingga 42%.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Angka yang dikutip dokumen sumber: MHGSL mendominasi AUPRC hingga +20% dibanding baseline XGBoost dan menekan false negatives hingga 42%.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Digunakan pada slide benchmark AUPRC \u2014 wajib disandarkan ke tabel eksperimen paper asli sebelum presentasi final.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Digunakan pada slide benchmark AUPRC \u2014 wajib disandarkan ke tabel eksperimen paper asli sebelum presentasi final.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Snippet paper menyatakan 'outperform existing methods', tetapi angka spesifik +20% AUPRC / \u221242% FN tidak ditemukan di sumber terbuka \u2014 baca full-text paper (akses terbuka CC BY 4.0) dan kutip nilai eksperimen persisnya.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Snippet paper menyatakan 'outperform existing methods', tetapi angka spesifik +20% AUPRC / \u221242% FN tidak ditemukan di sumber terbuka \u2014 baca full-text paper (akses terbuka CC BY 4.0) dan kutip nilai eksperimen persisnya.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Klaim kinerja: AUPRC +20% & false negatives \u221242% vs XGBoost",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Klaim kinerja: AUPRC +20% & false negatives \u221242% vs XGBoost",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Klaim-kinerja-AUPRC-20-false-negatives-42-vs-XGBoost-3f23e6031ab7815d8336ed2bd6d6cfa4",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8188-a5c2-d210a0dbd6b5",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "1cc00a23-a110-4676-8c69-be2c5ac4837a",
+            "name": "Pendukung",
+            "color": "blue"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://zenodo.org/records/21717009"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Synthetic Minority Over-sampling Technique untuk menyeimbangkan kelas fraud (minoritas ekstrem) pada data pelatihan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Synthetic Minority Over-sampling Technique untuk menyeimbangkan kelas fraud (minoritas ekstrem) pada data pelatihan.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kombinasi XGBoost + SMOTE pada baseline Fase 1, sebelum pipeline graf penuh.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kombinasi XGBoost + SMOTE pada baseline Fase 1, sebelum pipeline graf penuh.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Teknik sampling standar (RUS/ROS/SMOTE) di studi fraud Medicare; paper MHGSL juga menyoroti imbalanced distribution pada dataset Medical-B yang memengaruhi classifier.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Teknik sampling standar (RUS/ROS/SMOTE) di studi fraud Medicare; paper MHGSL juga menyoroti imbalanced distribution pada dataset Medical-B yang memengaruhi classifier.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SMOTE untuk data kelas tidak seimbang",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SMOTE untuk data kelas tidak seimbang",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/SMOTE-untuk-data-kelas-tidak-seimbang-3f23e6031ab78188a5c2d210a0dbd6b5",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81a3-af97-e873d177b55a",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.cell.com/heliyon/fulltext/S2405-8440(24)06076-6"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Hong et al., Heliyon 2024 (DOI 10.1016/j.heliyon.2024.e30045): ekosistem asuransi direpresentasikan 3 saluran graf \u2014 topologi (relasi entitas), fitur (KNN + cosine similarity), semantik (meta-path klinis) \u2014 diproses GCN spesifik-saluran + GCN parameter-bersama, lalu difusi & klasifikasi.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Hong et al., Heliyon 2024 (DOI 10.1016/j.heliyon.2024.e30045): ekosistem asuransi direpresentasikan 3 saluran graf \u2014 topologi (relasi entitas), fitur (KNN + cosine similarity), semantik (meta-path klinis) \u2014 diproses GCN spesifik-saluran + GCN parameter-bersama, lalu difusi & klasifikasi.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Arsitektur inti Aegis-JKN: pasien, dokter, faskes, obat, departemen = simpul; rujukan/resep/diagnosis = sisi; subgraf padat anomali = komunitas sindikat (collusive communities).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Arsitektur inti Aegis-JKN: pasien, dokter, faskes, obat, departemen = simpul; rujukan/resep/diagnosis = sisi; subgraf padat anomali = komunitas sindikat (collusive communities).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Struktur 3 saluran & klaim outperform (F1/AUC/accuracy vs StGNN, MHAMFD dll.) terverifikasi via review Journal of Big Data. Varian terbaru: MHINAGSL (IEEE Access 2025, multiview heterogeneous, F1 0,92) layak disitasi tambahan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Struktur 3 saluran & klaim outperform (F1/AUC/accuracy vs StGNN, MHAMFD dll.) terverifikasi via review Journal of Big Data. Varian terbaru: MHINAGSL (IEEE Access 2025, multiview heterogeneous, F1 0,92) layak disitasi tambahan.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "MHGSL \u2014 Multi-Channel Heterogeneous Graph Structure Learning",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "MHGSL \u2014 Multi-Channel Heterogeneous Graph Structure Learning",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/MHGSL-Multi-Channel-Heterogeneous-Graph-Structure-Learning-3f23e6031ab781a3af97e873d177b55a",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81ab-b3cd-d57a66bf3800",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "d2d22bfe-fb8a-4efa-8a47-300a887b82d8",
+            "name": "Perlu Verifikasi",
+            "color": "red"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "1cc00a23-a110-4676-8c69-be2c5ac4837a",
+            "name": "Pendukung",
+            "color": "blue"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://ai.google.dev/gemini-api/docs/pricing"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Skema dokumen sumber: model ringan (mis. Gemini Flash, US$0,10-1,50 per 1 juta token input) untuk batch ribuan diagnosis rawat jalan; model besar (Pro, \u00b1US$2,00 per 1 juta token) selektif untuk klaim rawat inap kritis/ambigu.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Skema dokumen sumber: model ringan (mis. Gemini Flash, US$0,10-1,50 per 1 juta token input) untuk batch ribuan diagnosis rawat jalan; model besar (Pro, \u00b1US$2,00 per 1 juta token) selektif untuk klaim rawat inap kritis/ambigu.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "460c378d-0002-4c4d-91f0-05840e5fae80",
+            "name": "Ekonomi & ROI",
+            "color": "pink"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Biaya beberapa sen dolar per klaim sangat terjustifikasi bila mencegah satu klaim fiktif/upcoding bernilai jutaan-puluhan juta rupiah.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Biaya beberapa sen dolar per klaim sangat terjustifikasi bila mencegah satu klaim fiktif/upcoding bernilai jutaan-puluhan juta rupiah.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Harga Gemini 1.5 pada dokumen tampak usang (lini model Google sudah bergenerasi; 1.5 deprecated) \u2014 hitung ulang dengan kalkulator harga resmi Google dan sebutkan model generasi terbaru saat finalisasi proposal.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Harga Gemini 1.5 pada dokumen tampak usang (lini model Google sudah bergenerasi; 1.5 deprecated) \u2014 hitung ulang dengan kalkulator harga resmi Google dan sebutkan model generasi terbaru saat finalisasi proposal.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Tokenomics LLM (batch ringan vs analisis selektif)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Tokenomics LLM (batch ringan vs analisis selektif)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Tokenomics-LLM-batch-ringan-vs-analisis-selektif-3f23e6031ab781abb3cdd57a66bf3800",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81c5-bd97-c03c6277c4da",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://satusehat.kemkes.go.id/platform/docs/id/interoperability/klaim-bpjs/"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "V-Claim: bridging SIMRS faskes ke server BPJS untuk eligibilitas, rujukan, dan klaim. E-Klaim: aplikasi coding & pengajuan paket INA-CBG untuk FKRTL.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "V-Claim: bridging SIMRS faskes ke server BPJS untuk eligibilitas, rujukan, dan klaim. E-Klaim: aplikasi coding & pengajuan paket INA-CBG untuk FKRTL.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "6b982e7d-e9e2-4578-9422-a1d4e5e7a6cc",
+            "name": "Sumber Data & Interoperabilitas",
+            "color": "green"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Aegis-JKN sebagai middleware: memindai berkas sebelum dikirim ke V-Claim \u2014 skor rendah diproses otomatis, skor tinggi masuk antrean investigasi verifikator sebelum pencairan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Aegis-JKN sebagai middleware: memindai berkas sebelum dikirim ke V-Claim \u2014 skor rendah diproses otomatis, skor tinggi masuk antrean investigasi verifikator sebelum pencairan.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Dokumentasi resmi platform SATUSEHAT memuat modul 'Pembiayaan Kesehatan \u2014 Klaim BPJS Kesehatan' (V-Claim); juknis verifikasi klaim & E-Klaim tersedia di situs BPJS.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Dokumentasi resmi platform SATUSEHAT memuat modul 'Pembiayaan Kesehatan \u2014 Klaim BPJS Kesehatan' (V-Claim); juknis verifikasi klaim & E-Klaim tersedia di situs BPJS.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Integrasi V-Claim & E-Klaim (INA-CBG)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Integrasi V-Claim & E-Klaim (INA-CBG)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Integrasi-V-Claim-E-Klaim-INA-CBG-3f23e6031ab781c5bd97c03c6277c4da",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81cc-8f70-f4fe7959e142",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://peraturan.bpk.go.id/Details/245544/permenkes-no-24-tahun-2022"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Permenkes 24/2022 mewajibkan Rekam Medis Elektronik; interoperabilitas nasional via platform SATUSEHAT memakai standar HL7 FHIR R4.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Permenkes 24/2022 mewajibkan Rekam Medis Elektronik; interoperabilitas nasional via platform SATUSEHAT memakai standar HL7 FHIR R4.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "6b982e7d-e9e2-4578-9422-a1d4e5e7a6cc",
+            "name": "Sumber Data & Interoperabilitas",
+            "color": "green"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Modul fitur ML: Encounter (episode kunjungan), Condition (ICD-10), MedicationRequest/MedicationDispense (resep & penyerahan), Composition (narasi resume medis).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Modul fitur ML: Encounter (episode kunjungan), Condition (ICD-10), MedicationRequest/MedicationDispense (resep & penyerahan), Composition (narasi resume medis).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Peraturan resmi di JDIH BPK; panduan integrasi faskes (Kemenkes/valtera/dtisolution) mengonfirmasi FHIR R4 sebagai protokol interoperabilitas RME \u2014 kelayakan deployment yang kuat di mata juri.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Peraturan resmi di JDIH BPK; panduan integrasi faskes (Kemenkes/valtera/dtisolution) mengonfirmasi FHIR R4 sebagai protokol interoperabilitas RME \u2014 kelayakan deployment yang kuat di mata juri.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SATUSEHAT & HL7 FHIR R4 (Permenkes 24/2022)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SATUSEHAT & HL7 FHIR R4 (Permenkes 24/2022)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/SATUSEHAT-HL7-FHIR-R4-Permenkes-24-2022-3f23e6031ab781cc8f70f4fe7959e142",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81df-ba10-ed32f415d5d8",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": null
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "SHAP per-saluran graf, integrasi middleware V-Claim, UAT bersama verifikator BPJS.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "SHAP per-saluran graf, integrasi middleware V-Claim, UAT bersama verifikator BPJS.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "9d63fa63-87e9-4f75-84a2-d83d42b05f87",
+            "name": "Roadmap & Operasional",
+            "color": "brown"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Validasi Human-in-the-Loop; pengukuran nyata waktu telaah per berkas untuk menggantikan asumsi 20\u21923 menit dengan data terukur.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Validasi Human-in-the-Loop; pengukuran nyata waktu telaah per berkas untuk menggantikan asumsi 20\u21923 menit dengan data terukur.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "UAT dengan verifikator adalah bukti human-centric terkuat di mata dewan juri Healthkathon.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "UAT dengan verifikator adalah bukti human-centric terkuat di mata dewan juri Healthkathon.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Fase 2 (3-6 bulan): transparansi & integrasi",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Fase 2 (3-6 bulan): transparansi & integrasi",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Fase-2-3-6-bulan-transparansi-integrasi-3f23e6031ab781dfba10ed32f415d5d8",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81ea-9d72-ffc2db7d9a9c",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "1cc00a23-a110-4676-8c69-be2c5ac4837a",
+            "name": "Pendukung",
+            "color": "blue"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": null
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Model berlatih lokal di server faskes di balik firewall; hanya pembaruan bobot/parameter yang dikirim ke peladen pusat BPJS \u2014 data rekam medis mentah tidak pernah berpindah.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Model berlatih lokal di server faskes di balik firewall; hanya pembaruan bobot/parameter yang dikirim ke peladen pusat BPJS \u2014 data rekam medis mentah tidak pernah berpindah.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Visi Fase 3: federated learning 'bayangan' berjalan paralel dengan pipeline pusat.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Visi Fase 3: federated learning 'bayangan' berjalan paralel dengan pipeline pusat.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Paradigma mapan di literatur ML kesehatan; dokumen sumber memposisikannya sebagai roadmap (bukan komponen purwarupa). Tidak diujicoba ke satu studi tunggal pada riset ini \u2014 sitasi umum diperlukan bila dipresentasikan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Paradigma mapan di literatur ML kesehatan; dokumen sumber memposisikannya sebagai roadmap (bukan komponen purwarupa). Tidak diujicoba ke satu studi tunggal pada riset ini \u2014 sitasi umum diperlukan bila dipresentasikan.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Federated Learning (ekstensibilitas nasional)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Federated Learning (ekstensibilitas nasional)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Federated-Learning-ekstensibilitas-nasional-3f23e6031ab781ea9d72ffc2db7d9a9c",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81f4-be07-d477f9fda614",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": null
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "AI mempre-screen 100% klaim dan mengeskalasi anomali; keputusan final tetap di tangan verifikator. Keputusan verifikator (konfirmasi/tolak alarm) menjadi reward signal untuk kalibrasi bobot model berkelanjutan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "AI mempre-screen 100% klaim dan mengeskalasi anomali; keputusan final tetap di tangan verifikator. Keputusan verifikator (konfirmasi/tolak alarm) menjadi reward signal untuk kalibrasi bobot model berkelanjutan.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "b1879994-dadf-4611-a5eb-78f20947883c",
+            "name": "Teknologi AI",
+            "color": "blue"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Active Learning memilih kasus ambigu untuk dilabeli; DPO (Direct Preference Optimization) diklaim menurunkan tingkat alarm palsu seiring waktu operasional.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Active Learning memilih kasus ambigu untuk dilabeli; DPO (Direct Preference Optimization) diklaim menurunkan tingkat alarm palsu seiring waktu operasional.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "HITL adalah praktik audit standar & selaras etika UU PDP. Penerapan DPO (teknik preference-alignment dari ranah LLM) untuk kalibrasi model fraud belum berliteratur kuat \u2014 posisikan sebagai hipotesis inovasi tim, bukan hasil mapan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "HITL adalah praktik audit standar & selaras etika UU PDP. Penerapan DPO (teknik preference-alignment dari ranah LLM) untuk kalibrasi model fraud belum berliteratur kuat \u2014 posisikan sebagai hipotesis inovasi tim, bukan hasil mapan.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Human-in-the-Loop + Active Learning + DPO",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Human-in-the-Loop + Active Learning + DPO",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Human-in-the-Loop-Active-Learning-DPO-3f23e6031ab781f4be07d477f9fda614",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81f7-ac71-d406977de867",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": null
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Pilot pada 5 FKRTL, MHGSL + Active Learning/DPO penuh, federated learning bayangan, dan HITL operasional.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Pilot pada 5 FKRTL, MHGSL + Active Learning/DPO penuh, federated learning bayangan, dan HITL operasional.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "9d63fa63-87e9-4f75-84a2-d83d42b05f87",
+            "name": "Roadmap & Operasional",
+            "color": "brown"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Estimasi penghematan pilot (asumsi 3% fraud pada tagihan operasi bedah) + efisiensi cadangan DJS (Dana Jaminan Sosial).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Estimasi penghematan pilot (asumsi 3% fraud pada tagihan operasi bedah) + efisiensi cadangan DJS (Dana Jaminan Sosial).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Asumsi 3% fraud berstatus 'Perlu Verifikasi' (lihat baris estimasi fraud 3-7%); gunakan skenario sensitivitas 1/3/5/7% agar proyeksi ROI kokoh terhadap pertanyaan juri.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Asumsi 3% fraud berstatus 'Perlu Verifikasi' (lihat baris estimasi fraud 3-7%); gunakan skenario sensitivitas 1/3/5/7% agar proyeksi ROI kokoh terhadap pertanyaan juri.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Fase 3 (>6 bulan): pilot 5 FKRTL + federated bayangan",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Fase 3 (>6 bulan): pilot 5 FKRTL + federated bayangan",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Fase-3-6-bulan-pilot-5-FKRTL-federated-bayangan-3f23e6031ab781f7ac71d406977de867",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8103-9ac2-ff81d2b0fdb1",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.allalliedhealthschools.com/blog/fine-line-between-error-and-fraud-a-guide-to-upcoding-unbundling-and-phantom-billing/"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Penagihan layanan yang tidak pernah diberikan kepada pasien (klaim fiktif) \u2014 area potensi kebocoran terbesar di segmen faskes.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Penagihan layanan yang tidak pernah diberikan kepada pasien (klaim fiktif) \u2014 area potensi kebocoran terbesar di segmen faskes.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: inkonsistensi Encounter FHIR vs resume medis (Composition) vs data penagihan; anomali frekuensi kunjungan; message-passing graf pasien\u2013dokter\u2013faskes.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: inkonsistensi Encounter FHIR vs resume medis (Composition) vs data penagihan; anomali frekuensi kunjungan; message-passing graf pasien\u2013dokter\u2013faskes.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Taksonomi fraud billing klasik (juga Phillips & Cohen; Simbo AI). Konteks JKN: kajian etis fraud BPJS (journalcenter) dan portal data BPJS tentang strategic purchasing.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Taksonomi fraud billing klasik (juga Phillips & Cohen; Simbo AI). Konteks JKN: kajian etis fraud BPJS (journalcenter) dan portal data BPJS tentang strategic purchasing.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Phantom Billing",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Phantom Billing",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Phantom-Billing-3f23e6031ab781039ac2ff81d2b0fdb1",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8103-aeff-d003a07cd8ba",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://sustain.id/2024/10/04/fraud-dalam-pelayanan-kesehatan-di-indonesia-dan-strategi-pencegahannya/"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Manipulasi peresepan obat berbiaya tinggi untuk dijual kembali; pengambilan obat melebihi dosis rasional.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Manipulasi peresepan obat berbiaya tinggi untuk dijual kembali; pengambilan obat melebihi dosis rasional.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: clustering MedicationRequest/MedicationDispense; validasi terhadap FORNAS & panduan klinis; saluran semantik MHGSL.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: clustering MedicationRequest/MedicationDispense; validasi terhadap FORNAS & panduan klinis; saluran semantik MHGSL.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Literatur strategi pencegahan fraud kesehatan Indonesia (",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Literatur strategi pencegahan fraud kesehatan Indonesia (",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "sustain.id",
+                "link": {
+                  "url": "http://sustain.id/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "sustain.id",
+              "href": "http://sustain.id/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": ") membahas penyalahgunaan resep; dokumen sumber mengusulkan clustering pengambilan obat kronis.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": ") membahas penyalahgunaan resep; dokumen sumber mengusulkan clustering pengambilan obat kronis.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Drug diversion / penumpukan obat kronis",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Drug diversion / penumpukan obat kronis",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Drug-diversion-penumpukan-obat-kronis-3f23e6031ab78103aeffd003a07cd8ba",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-810c-8f6a-d2802ded6332",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://keuangan.kontan.co.id/news/klaim-layanan-bpjs-kesehatan-tembus-2-juta-per-hari"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "BPJS Kesehatan memproses \u00b12.000.000 klaim layanan kesehatan per hari kerja dari berbagai tingkatan faskes di seluruh Indonesia.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "BPJS Kesehatan memproses \u00b12.000.000 klaim layanan kesehatan per hari kerja dari berbagai tingkatan faskes di seluruh Indonesia.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "04e7ad52-2756-4650-b21a-c5dfc88f600a",
+            "name": "Konteks & Statistik",
+            "color": "yellow"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Justifikasi utama urgensi otomasi verifikasi klaim \u2014 volume melampaui kapasitas verifikasi manual.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Justifikasi utama urgensi otomasi verifikasi klaim \u2014 volume melampaui kapasitas verifikasi manual.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Dikonfirmasi pemberitaan nasional (Kontan). Pembayaran klaim \u00b1Rp500 miliar/hari (Stabilitas) dan total klaim tahunan 113,47 T (",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Dikonfirmasi pemberitaan nasional (Kontan). Pembayaran klaim \u00b1Rp500 miliar/hari (Stabilitas) dan total klaim tahunan 113,47 T (",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "manajemen-pembiayaankesehatan.net",
+                "link": {
+                  "url": "http://manajemen-pembiayaankesehatan.net/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "manajemen-pembiayaankesehatan.net",
+              "href": "http://manajemen-pembiayaankesehatan.net/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": ") memperkuat skala finansial.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": ") memperkuat skala finansial.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Volume klaim JKN \u00b12 juta per hari",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Volume klaim JKN \u00b12 juta per hari",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Volume-klaim-JKN-2-juta-per-hari-3f23e6031ab7810c8f6ad2802ded6332",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-810f-8430-f78270cf6665",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://siap-lafki.or.id/bpjs-kesehatan-dan-tantangan-fraud-20-triliun-perspektif-ilmu-administrasi-dalam-pengelolaan-jaminan-sosial"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Pemberi kerja melaporkan upah lebih rendah untuk memangkas iuran JKN (4% dari upah).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Pemberi kerja melaporkan upah lebih rendah untuk memangkas iuran JKN (4% dari upah).",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: OCR/NLP dokumen penggajian; pemodelan silang data perpajakan; deteksi anomali tren pembayaran iuran bulanan.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: OCR/NLP dokumen penggajian; pemodelan silang data perpajakan; deteksi anomali tren pembayaran iuran bulanan.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Segmen pemberi kerja adalah salah satu dari tiga kriteria efisiensi risiko Healthkathon 2026; proyek pembanding PatuhRadar (GitHub) menggarap segmen ini dengan data UMP 38 provinsi (2024\u20132026).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Segmen pemberi kerja adalah salah satu dari tiga kriteria efisiensi risiko Healthkathon 2026; proyek pembanding PatuhRadar (GitHub) menggarap segmen ini dengan data UMP 38 provinsi (2024\u20132026).",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Under-reporting upah pemberi kerja",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Under-reporting upah pemberi kerja",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Under-reporting-upah-pemberi-kerja-3f23e6031ab7810f8430f78270cf6665",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8111-a832-c5aa2ac5e8c4",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://acch.kpk.go.id/id/component/content/article?id=672:korupsi-dalam-pelayanan-kesehatan-di-era-jaminan-kesehatan-nasional-kajian-besarnya-potensi-dan-sistem-pengendalian-fraud"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Memperpanjang hari rawat inap tanpa indikasi medis untuk menaikkan nilai klaim.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Memperpanjang hari rawat inap tanpa indikasi medis untuk menaikkan nilai klaim.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: anomali length-of-stay vs distribusi diagnosis-severity (FHIR Encounter + Condition); durasi rawat sebagai kontributor skor SHAP.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: anomali length-of-stay vs distribusi diagnosis-severity (FHIR Encounter + Condition); durasi rawat sebagai kontributor skor SHAP.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Diakui sebagai modus dalam kajian pengendalian fraud era JKN (KPK ACCH). Contoh atribusi SHAP di dokumen sumber: durasi rawat +35% pada skor fraud 92%.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Diakui sebagai modus dalam kajian pengendalian fraud era JKN (KPK ACCH). Contoh atribusi SHAP di dokumen sumber: durasi rawat +35% pada skor fraud 92%.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Prolonged Stay (perpanjangan rawat tanpa indikasi)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Prolonged Stay (perpanjangan rawat tanpa indikasi)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Prolonged-Stay-perpanjangan-rawat-tanpa-indikasi-3f23e6031ab78111a832c5aa2ac5e8c4",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8137-8756-fcc09a6203ca",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://journalcenter.org/index.php/inovasi/article/download/4767/3750/18212"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Duplikasi isi rekam medis antar pasien untuk memuluskan klaim fiktif atau berulang.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Duplikasi isi rekam medis antar pasien untuk memuluskan klaim fiktif atau berulang.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: kemiripan narasi resume medis (cosine similarity antar embeddings \u2014 saluran fitur MHGSL); fingerprint dokumen duplikat.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: kemiripan narasi resume medis (cosine similarity antar embeddings \u2014 saluran fitur MHGSL); fingerprint dokumen duplikat.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Modus tercantum di dokumen sumber & kajian fraud layanan BPJS; deteksi kemiripan dokumen tekniknya mapan, namun kasus cloning di JKN masih perlu sitasi studi primer.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Modus tercantum di dokumen sumber & kajian fraud layanan BPJS; deteksi kemiripan dokumen tekniknya mapan, namun kasus cloning di JKN masih perlu sitasi studi primer.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Cloning rekam medis antar-pasien",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Cloning rekam medis antar-pasien",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Cloning-rekam-medis-antar-pasien-3f23e6031ab781378756fcc09a6203ca",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-816b-90b3-f21d236aa0f4",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://github.com/biezz-2/Aegis-JKN"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Sekitar 1.000 petugas verifikator BPJS Kesehatan menangani \u00b12 juta klaim/hari \u2014 rasio beban kerja ekstrem yang membuka celah fraud terstruktur.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Sekitar 1.000 petugas verifikator BPJS Kesehatan menangani \u00b12 juta klaim/hari \u2014 rasio beban kerja ekstrem yang membuka celah fraud terstruktur.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "04e7ad52-2756-4650-b21a-c5dfc88f600a",
+            "name": "Konteks & Statistik",
+            "color": "yellow"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Argumen inti proposal: AI melakukan pra-penyaringan 100% klaim sehingga verifikator fokus pada berkas berisiko tinggi.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Argumen inti proposal: AI melakukan pra-penyaringan 100% klaim sehingga verifikator fokus pada berkas berisiko tinggi.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Angka 1.000 verifikator bersumber dari dokumen sumber & repo Aegis-JKN; belum ditemukan rilis resmi BPJS independen yang menyebut angka persis ini \u2014 kroscek dengan publikasi resmi sebelum presentasi final.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Angka 1.000 verifikator bersumber dari dokumen sumber & repo Aegis-JKN; belum ditemukan rilis resmi BPJS independen yang menyebut angka persis ini \u2014 kroscek dengan publikasi resmi sebelum presentasi final.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kapasitas verifikasi \u00b11.000 verifikator (rasio 2.000:1)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kapasitas verifikasi \u00b11.000 verifikator (rasio 2.000:1)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Kapasitas-verifikasi-1-000-verifikator-rasio-2-000-1-3f23e6031ab7816b90b3f21d236aa0f4",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-8194-8f0e-fadbb17f54ee",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.researchgate.net/publication/369679967_ANALISIS_KEJADIAN_UPCODING_BIAYA_PELAYANAN_KESEHATAN_DI_WILAYAH_KERJA_BPJS_KESEHATAN_CABANG_DEPOK"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Mengubah diagnosis/prosedur agar klaim jatuh ke kelompok INA-CBG dengan tarif lebih tinggi.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Mengubah diagnosis/prosedur agar klaim jatuh ke kelompok INA-CBG dengan tarif lebih tinggi.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: inkonsistensi ICD-10 (Condition) vs tindakan ICD-9-CM; severity of illness tidak wajar vs umur/komorbiditas; saluran semantik MHGSL.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: inkonsistensi ICD-10 (Condition) vs tindakan ICD-9-CM; severity of illness tidak wajar vs umur/komorbiditas; saluran semantik MHGSL.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Ada studi empiris kejadian upcoding di KC Depok (ResearchGate 2023) \u2014 sitasi Indonesian-context yang kuat untuk proposal. Dokumen sumber merekomendasikan fokus use case upcoding + phantom billing FKRTL.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Ada studi empiris kejadian upcoding di KC Depok (ResearchGate 2023) \u2014 sitasi Indonesian-context yang kuat untuk proposal. Dokumen sumber merekomendasikan fokus use case upcoding + phantom billing FKRTL.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Upcoding (manipulasi kode INA-CBG)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Upcoding (manipulasi kode INA-CBG)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Upcoding-manipulasi-kode-INA-CBG-3f23e6031ab781948f0efadbb17f54ee",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81a5-a4be-cacb0c6f51e2",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://web.bpjs-kesehatan.go.id/uploads/information/4bd28c6ea8f022040f6eb93cfcd6e723.pdf"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Peminjaman kartu kepesertaan oleh pihak tidak berhak untuk memperoleh layanan; termasuk surat keterangan sakit fiktif kolusif.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Peminjaman kartu kepesertaan oleh pihak tidak berhak untuk memperoleh layanan; termasuk surat keterangan sakit fiktif kolusif.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: autentikasi biometrik; anomali pola kunjungan & geografis; graf identitas pasien\u2013faskes.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: autentikasi biometrik; anomali pola kunjungan & geografis; graf identitas pasien\u2013faskes.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Panduan layanan BPJS secara eksplisit mengingatkan peserta menjaga kartu agar tidak dimanfaatkan pihak tidak berhak \u2014 modus resmi diakui.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Panduan layanan BPJS secara eksplisit mengingatkan peserta menjaga kartu agar tidak dimanfaatkan pihak tidak berhak \u2014 modus resmi diakui.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Penyalahgunaan identitas/kartu JKN",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Penyalahgunaan identitas/kartu JKN",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Penyalahgunaan-identitas-kartu-JKN-3f23e6031ab781a5a4becacb0c6f51e2",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81cf-8611-fed74fd28210",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.phillipsandcohen.com/upcoding-unbundling-fragmentation/"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Memecah satu paket layanan terintegrasi menjadi komponen terpisah agar total tarif lebih tinggi dari tarif paket.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Memecah satu paket layanan terintegrasi menjadi komponen terpisah agar total tarif lebih tinggi dari tarif paket.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: pola kombinasi prosedur yang seharusnya dibundel; mining urutan tindakan dari data FHIR; fitur agregat klaim per encounter.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: pola kombinasi prosedur yang seharusnya dibundel; mining urutan tindakan dari data FHIR; fitur agregat klaim per encounter.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Taksonomi standar fraud billing (fragmentation/unbundling); padanan JKN: penagihan komponen paket INA-CBG secara terpisah.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Taksonomi standar fraud billing (fragmentation/unbundling); padanan JKN: penagihan komponen paket INA-CBG secara terpisah.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Unbundling (pemecahan paket klaim)",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Unbundling (pemecahan paket klaim)",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Unbundling-pemecahan-paket-klaim-3f23e6031ab781cf8611fed74fd28210",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81d4-a1b6-f1ad0ae646e3",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "94fc607d-2a34-4fae-aba1-76b6a02c4fbd",
+            "name": "Sebagian Terverifikasi",
+            "color": "yellow"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://acch.kpk.go.id/id/component/content/article?id=672:korupsi-dalam-pelayanan-kesehatan-di-era-jaminan-kesehatan-nasional-kajian-besarnya-potensi-dan-sistem-pengendalian-fraud"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Menahan setoran iuran pekerja dan/atau salah mengklasifikasikan status hubungan kerja untuk menghindari kewajiban finansial.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Menahan setoran iuran pekerja dan/atau salah mengklasifikasikan status hubungan kerja untuk menghindari kewajiban finansial.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "549f7422-b9db-40e6-a8a5-3c933694b55f",
+            "name": "Modus Fraud",
+            "color": "red"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Deteksi: anomali waktu & nilai pembayaran iuran; konsistensi status kepesertaan vs data ketenagakerjaan; pendaftaran sebagian pekerja.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Deteksi: anomali waktu & nilai pembayaran iuran; konsistensi status kepesertaan vs data ketenagakerjaan; pendaftaran sebagian pekerja.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kajian KPK ACCH & LAFKI membahas fraud segmen pemberi kerja; dokumen sumber menempatkannya sebagai pilar risiko ketiga.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kajian KPK ACCH & LAFKI membahas fraud segmen pemberi kerja; dokumen sumber menempatkannya sebagai pilar risiko ketiga.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Penahanan setoran iuran & misklasifikasi status kerja",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Penahanan setoran iuran & misklasifikasi status kerja",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Penahanan-setoran-iuran-misklasifikasi-status-kerja-3f23e6031ab781d4a1b6f1ad0ae646e3",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81d7-820e-d43fc82cba2a",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "d2d22bfe-fb8a-4efa-8a47-300a887b82d8",
+            "name": "Perlu Verifikasi",
+            "color": "red"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://siap-lafki.or.id/bpjs-kesehatan-dan-tantangan-fraud-20-triliun-perspektif-ilmu-administrasi-dalam-pengelolaan-jaminan-sosial"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Rentang estimasi laju fraud terhadap total belanja klaim kesehatan yang lazim dikutip dalam literatur JKN.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Rentang estimasi laju fraud terhadap total belanja klaim kesehatan yang lazim dikutip dalam literatur JKN.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "04e7ad52-2756-4650-b21a-c5dfc88f600a",
+            "name": "Konteks & Statistik",
+            "color": "yellow"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Basis asumsi kuantifikasi dampak & ROI (skenario 3% fraud pada tagihan operasi bedah).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Basis asumsi kuantifikasi dampak & ROI (skenario 3% fraud pada tagihan operasi bedah).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Rentang 3\u20137% dikutip dokumen sumber; pembanding internasional: review Journal of Big Data menyebut fraud kesehatan \u00b1USD 300 miliar/tahun di AS. Angka spesifik untuk JKN perlu dirujuk ke studi primer (kajian KPK ACCH) sebelum dipakai di proposal.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Rentang 3\u20137% dikutip dokumen sumber; pembanding internasional: review Journal of Big Data menyebut fraud kesehatan \u00b1USD 300 miliar/tahun di AS. Angka spesifik untuk JKN perlu dirujuk ke studi primer (kajian KPK ACCH) sebelum dipakai di proposal.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Estimasi fraud 3\u20137% dari total nilai klaim",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Estimasi fraud 3\u20137% dari total nilai klaim",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Estimasi-fraud-3-7-dari-total-nilai-klaim-3f23e6031ab781d7820ed43fc82cba2a",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81dd-8eb2-d7a26d05677b",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "5960f67d-aed9-4c98-b361-f48dfb485313",
+            "name": "Tinggi",
+            "color": "orange"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://money.kompas.com/read/2024/09/21/131900126/klarifikasi-bpjs-kesehatan-soal-potensi-kerugian-rp-20-triliun-akibat-fraud-"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Angka potensi kerugian tahunan akibat fraud JKN yang beredar publik dan diklarifikasi BPJS Kesehatan (2024).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Angka potensi kerugian tahunan akibat fraud JKN yang beredar publik dan diklarifikasi BPJS Kesehatan (2024).",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "04e7ad52-2756-4650-b21a-c5dfc88f600a",
+            "name": "Konteks & Statistik",
+            "color": "yellow"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Framing urgensi finansial untuk slide 'Definisi Masalah & Urgensi'.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Framing urgensi finansial untuk slide 'Definisi Masalah & Urgensi'.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Diklarifikasi BPJS via Kompas (21 Sep 2024) & Liputan6; dibahas pula oleh LAFKI dan kajian KPK ACCH. Posisikan sebagai 'potensi', bukan kerugian realisasi.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Diklarifikasi BPJS via Kompas (21 Sep 2024) & Liputan6; dibahas pula oleh LAFKI dan kajian KPK ACCH. Posisikan sebagai 'potensi', bukan kerugian realisasi.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Potensi kerugian fraud hingga Rp20 triliun",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Potensi kerugian fraud hingga Rp20 triliun",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Potensi-kerugian-fraud-hingga-Rp20-triliun-3f23e6031ab781dd8eb2d7a26d05677b",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81e8-ad09-f30c4123bed5",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "1cc00a23-a110-4676-8c69-be2c5ac4837a",
+            "name": "Pendukung",
+            "color": "blue"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.stabilitas.id/rasio-klaim-tembus-10872-bpjs-kesehatan-bayar-rumah-sakit-rp500-miliar-sehari/"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Skala finansial operasional klaim BPJS Kesehatan sebagai basis proyeksi penghematan solusi.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Skala finansial operasional klaim BPJS Kesehatan sebagai basis proyeksi penghematan solusi.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "04e7ad52-2756-4650-b21a-c5dfc88f600a",
+            "name": "Konteks & Statistik",
+            "color": "yellow"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Konteks kuantifikasi dampak ekonomi: rasio klaim tembus 108,72% dari penerimaan iuran menandakan tekanan DJS.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Konteks kuantifikasi dampak ekonomi: rasio klaim tembus 108,72% dari penerimaan iuran menandakan tekanan DJS.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Stabilitas (bayar RS Rp500 M/hari, rasio 108,72%); ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Stabilitas (bayar RS Rp500 M/hari, rasio 108,72%); ",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "manajemen-pembiayaankesehatan.net",
+                "link": {
+                  "url": "http://manajemen-pembiayaankesehatan.net/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "manajemen-pembiayaankesehatan.net",
+              "href": "http://manajemen-pembiayaankesehatan.net/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": " (klaim 113,47 T). BBC Indonesia membahas risiko tekor Rp20 T \u2014 konteks ketahanan finansial JKN.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": " (klaim 113,47 T). BBC Indonesia membahas risiko tekor Rp20 T \u2014 konteks ketahanan finansial JKN.",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Arus klaim \u00b1Rp500 M/hari; total 113,47 T/tahun",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Arus klaim \u00b1Rp500 M/hari; total 113,47 T/tahun",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Arus-klaim-Rp500-M-hari-total-113-47-T-tahun-3f23e6031ab781e8ad09f30c4123bed5",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81e9-b9f2-d81168ae2cb2",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://www.liputan6.com/health/read/8270049/healthkathon-2026-digelar-bpjs-kesehatan-dorong-pemanfaatan-ai-untuk-perkuat-jkn"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Kompetisi tahunan ke-6 BPJS Kesehatan dengan kriteria efisiensi risiko pada peserta, fasilitas kesehatan, dan pemberi kerja. Pendaftaran 14 Agustus\u201314 September 2026.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Kompetisi tahunan ke-6 BPJS Kesehatan dengan kriteria efisiensi risiko pada peserta, fasilitas kesehatan, dan pemberi kerja. Pendaftaran 14 Agustus\u201314 September 2026.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "04e7ad52-2756-4650-b21a-c5dfc88f600a",
+            "name": "Konteks & Statistik",
+            "color": "yellow"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Menyelaraskan use case proposal dengan kriteria juri; pendekatan 'problem-first' ditekankan Direktur TI BPJS Kesehatan Setiaji.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Menyelaraskan use case proposal dengan kriteria juri; pendekatan 'problem-first' ditekankan Direktur TI BPJS Kesehatan Setiaji.",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Dikonfirmasi Liputan6 (14 Agu 2026), Tempo, Media Indonesia (seminar BINUS, 25 Sep 2026). Pendaftaran sudah ditutup 14 Sep 2026 \u2014 cek tahap seleksi berikutnya di ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Dikonfirmasi Liputan6 (14 Agu 2026), Tempo, Media Indonesia (seminar BINUS, 25 Sep 2026). Pendaftaran sudah ditutup 14 Sep 2026 \u2014 cek tahap seleksi berikutnya di ",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "healthkathon.bpjs-kesehatan.go.id",
+                "link": {
+                  "url": "http://healthkathon.bpjs-kesehatan.go.id/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "healthkathon.bpjs-kesehatan.go.id",
+              "href": "http://healthkathon.bpjs-kesehatan.go.id/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": ".",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": ".",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Healthkathon 2026 \u2014 'Detect Smarter, Protect JKN'",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Healthkathon 2026 \u2014 'Detect Smarter, Protect JKN'",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Healthkathon-2026-Detect-Smarter-Protect-JKN-3f23e6031ab781e9b9f2d81168ae2cb2",
+      "public_url": null,
+      "archived": false
+    },
+    {
+      "object": "page",
+      "id": "3f23e603-1ab7-81fa-bbc0-c5225f095a06",
+      "created_time": "2026-10-07T00:09:00.000Z",
+      "last_edited_time": "2026-10-07T00:09:00.000Z",
+      "created_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "last_edited_by": {
+        "object": "user",
+        "id": "325d872b-594c-81ee-a3e4-0002bd457db6"
+      },
+      "cover": null,
+      "icon": null,
+      "parent": {
+        "type": "database_id",
+        "database_id": "310b35a5-9346-42df-af47-df9897cdcda1"
+      },
+      "in_trash": false,
+      "is_archived": false,
+      "is_locked": false,
+      "properties": {
+        "Status Verifikasi": {
+          "id": "%3B%3FmL",
+          "type": "select",
+          "select": {
+            "id": "a7e6d36e-5854-464b-bdf2-d72f4d83517c",
+            "name": "Terverifikasi",
+            "color": "green"
+          }
+        },
+        "Relevansi": {
+          "id": "%3Daqf",
+          "type": "select",
+          "select": {
+            "id": "cc38a667-6528-4365-b7eb-9ac41e0e19b2",
+            "name": "Kritis",
+            "color": "red"
+          }
+        },
+        "Sumber Riset": {
+          "id": "%3Exo%3A",
+          "type": "url",
+          "url": "https://github.com/biezz-2/Aegis-JKN"
+        },
+        "Deskripsi": {
+          "id": "IcI_",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Purwarupa web interaktif Aegis-JKN: visualisasi multi-channel graph, simulasi kasus upcoding terselubung FKRTL, akumulasi kontribusi tiap saluran terhadap skor fraud, benchmark AUPRC, formulasi matematis MHGSL.",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Purwarupa web interaktif Aegis-JKN: visualisasi multi-channel graph, simulasi kasus upcoding terselubung FKRTL, akumulasi kontribusi tiap saluran terhadap skor fraud, benchmark AUPRC, formulasi matematis MHGSL.",
+              "href": null
+            }
+          ]
+        },
+        "Kategori": {
+          "id": "Z%3Dxn",
+          "type": "select",
+          "select": {
+            "id": "9d63fa63-87e9-4f75-84a2-d83d42b05f87",
+            "name": "Roadmap & Operasional",
+            "color": "brown"
+          }
+        },
+        "Pendekatan Deteksi/Teknis": {
+          "id": "%5B~GV",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Pipeline demo 4 langkah hingga fusion & klasifikasi SHAP (contoh simulasi: probabilitas fraud 0,94 dengan dekomposisi kontribusi per saluran).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Pipeline demo 4 langkah hingga fusion & klasifikasi SHAP (contoh simulasi: probabilitas fraud 0,94 dengan dekomposisi kontribusi per saluran).",
+              "href": null
+            }
+          ]
+        },
+        "Catatan Riset": {
+          "id": "gq%3E%5D",
+          "type": "rich_text",
+          "rich_text": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Repo publik ditemukan & konsisten dengan dokumen sumber; README menyebut rasio 2.000.000 klaim vs 1.000 verifikator (2.000:1).",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Repo publik ditemukan & konsisten dengan dokumen sumber; README menyebut rasio 2.000.000 klaim vs 1.000 verifikator (2.000:1).",
+              "href": null
+            }
+          ]
+        },
+        "Item": {
+          "id": "title",
+          "type": "title",
+          "title": [
+            {
+              "type": "text",
+              "text": {
+                "content": "Purwarupa Aegis-JKN (GitHub + ",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "Purwarupa Aegis-JKN (GitHub + ",
+              "href": null
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": "aegisjkn.vercel.app",
+                "link": {
+                  "url": "http://aegisjkn.vercel.app/"
+                }
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": "aegisjkn.vercel.app",
+              "href": "http://aegisjkn.vercel.app/"
+            },
+            {
+              "type": "text",
+              "text": {
+                "content": ")",
+                "link": null
+              },
+              "annotations": {
+                "bold": false,
+                "italic": false,
+                "strikethrough": false,
+                "underline": false,
+                "code": false,
+                "color": "default"
+              },
+              "plain_text": ")",
+              "href": null
+            }
+          ]
+        }
+      },
+      "url": "https://app.notion.com/p/Purwarupa-Aegis-JKN-GitHub-aegisjkn-vercel-app-3f23e6031ab781fabbc0c5225f095a06",
+      "public_url": null,
+      "archived": false
+    }
+  ],
+  "next_cursor": null,
+  "has_more": false,
+  "type": "page_or_database",
+  "page_or_database": {},
+  "request_id": "20930fa6-cc21-4cd9-a7d0-a500182b8956"
+}

@@ -1,0 +1,1225 @@
+<!DOCTYPE html>
+<html theme="dark" editor="Default Dark" style="overflow-y: auto;"><div id="in-page-channel-node-id" data-channel-name="in_page_channel_GOUNA_"></div><head><meta charset="UTF-8">
+<script>
+  // Avoid arrow function syntax to stay ES5 compatible for the sake of googlebot.
+  window.addEventListener("message", function (message) {
+    if (message.source != window.parent) {
+      return;
+    }
+    if (message.data.sandboxed_iframe_evaluation) {
+      // Message is available in scope so evaluated script can get params from
+      // it.
+      window.currentMessage = message;
+      eval.call(null, message.data.sandboxed_iframe_evaluation);
+      delete window.currentMessage;
+    }
+  });
+</script>
+<style>html{--colab-primary-color:#0b57d0;--colab-primary-text-color:#1f1f1f;--colab-primary-text-color-rgb:31,31,31;--colab-secondary-text-color:#444746;--colab-primary-surface-color:#fff;--colab-secondary-surface-color:#f2f2f2;--colab-border-color:#c4c7c5;--colab-bold-border-color:#747775;--ansi-black:#000;--ansi-red:#8b0000;--ansi-green:#006400;--ansi-yellow:#cdcd00;--ansi-blue:#00e;--ansi-magenta:#cd00cd;--ansi-cyan:#4682b4;--ansi-gray:#e5e5e5;--ansi-bright-black:#7f7f7f;--ansi-bright-red:red;--ansi-bright-green:#00d000;--ansi-bright-yellow:#ff0;--ansi-bright-blue:#5c5cff;--ansi-bright-magenta:#f0f;--ansi-bright-cyan:#0ff;--ansi-bright-gray:#fff;--colab-anchor-color:var(--colab-primary-color);--colab-highlighted-surface-color:rgba(var(--colab-primary-text-color-rgb),0.08);--colab-icon-color:var(--colab-secondary-text-color);--colab-scrollbar-color:rgba(var(--colab-primary-text-color-rgb),0.24);--colab-scrollbar-hover-color:rgba(var(--colab-primary-text-color-rgb),0.48);--colab-scrollbar-active-color:rgba(var(--colab-primary-text-color-rgb),0.48);--colab-code-font-family:monospace;--colab-chrome-font-family:"Google Sans Text","Google Sans","Noto",sans-serif;--colab-chrome-font-size:14px}html[theme=dark]{--colab-primary-color:#a8c7fa;--colab-primary-text-color:#e3e3e3;--colab-primary-text-color-rgb:227,227,227;--colab-secondary-text-color:#c4c7c5;--colab-primary-surface-color:#282a2c;--colab-secondary-surface-color:#474747;--colab-border-color:#444746;--colab-bold-border-color:#8e918f;--ansi-black:#3f3f3f;--ansi-red:#ff7a88;--ansi-green:#57bb8a;--ansi-yellow:#ff6;--ansi-blue:#82b1ff;--ansi-magenta:#cd00cd;--ansi-cyan:#99bbd7;--ansi-gray:#e5e5e5;--ansi-bright-green:#0f0}html[theme=dark].embedded{--colab-secondary-surface-color:#202124;--colab-highlighted-surface-color:#202124;--colab-border-color:#3c4043}html[editor=Synthwave84]{--colab-anchor-color:#f97e72;--colab-primary-surface-color:#262335;--colab-secondary-surface-color:#49549539;--colab-highlighted-surface-color:#37294d99;--colab-border-color:#7059ab66;--ansi-red:#fe4450;--ansi-green:#72f1b8;--ansi-yellow:#f97e72;--ansi-blue:#03edf9;--ansi-magenta:#ff7edb;--ansi-cyan:#03edf9;--ansi-bright-red:#fe4450;--ansi-bright-green:#72f1b8;--ansi-bright-yellow:#fede5d;--ansi-bright-blue:#03edf9;--ansi-bright-magenta:#ff7edb;--ansi-bright-cyan:#03edf9}html{overflow-y:hidden}body{background:var(--colab-primary-surface-color);color:var(--colab-primary-text-color);font-family:var(--colab-chrome-font-family);font-size:var(--colab-chrome-font-size);line-height:1.24;font-weight:400;padding:7px 0 10px 5px;margin:0}h1,h2,h3,h4,h5,h6{color:var(--colab-primary-text-color);font-family:var(--colab-chrome-font-family);font-weight:700;margin-bottom:4px}p,ul{margin-bottom:6px;margin-top:6px}pre{margin-bottom:0;margin-top:0}a{color:var(--colab-anchor-color)}div.output_text,div.output_text pre,div.stream{display:inline}.execute_result>pre{display:block}.output_latex,.output_markdown{max-width:1016px}.output_markdown table,table.dataframe{border-collapse:collapse;border-spacing:0;border:none;table-layout:fixed}.output_markdown table thead,table.dataframe thead{border-bottom:1px solid var(--colab-border-color);font-family:var(--colab-code-font-family);text-align:right}.output_markdown table td,.output_markdown table th,.output_markdown table tr,table.dataframe td,table.dataframe th,table.dataframe tr{border:none;padding:.5em;white-space:normal}.output_markdown table th,table.dataframe th{font-weight:700}.output_markdown table th.col_heading,table.dataframe th.col_heading{text-align:right}.output_markdown table tbody tr:nth-child(odd),table.dataframe tbody tr:nth-child(odd){background:var(--colab-secondary-surface-color)}.output_markdown table tbody tr:hover,.output_markdown table tbody tr:nth-child(odd):hover,table.dataframe tbody tr:hover,table.dataframe tbody tr:nth-child(odd):hover{background-color:var(--colab-highlighted-surface-color)}.output_markdown table td,table.dataframe td{text-align:right}table.dataTable input.text_filter{width:95%}.output_markdown table th,table.dataTable th{text-align:left}.output_image>img{background-color:#fff;max-width:100%;vertical-align:bottom}.output_image>img.unconstrained{max-width:unset}.ansibold{font-weight:700}.ansiblack{color:#000}.ansired{color:darkred}.ansigreen{color:#006400}.ansiyellow{color:brown}.ansiblue{color:#00008b}.ansipurple{color:#9400d3}.ansicyan{color:#4682b4}.ansigray{color:gray}.ansibgblack{background-color:#000}.ansibgred{background-color:red}.ansibggreen{background-color:green}.ansibgyellow{background-color:#ff0}.ansibgblue{background-color:blue}.ansibgpurple{background-color:#f0f}.ansibgcyan{background-color:cyan}.ansibggray{background-color:gray}.output-error span{font-weight:400!important}.output-error pre{white-space:pre-wrap}.display_data .output_text pre,.execute_result .output_text pre{white-space:pre-wrap}input.raw_input{font-family:var(--colab-code-font-family);width:90%}input{background:var(--colab-primary-surface-color);border:1px solid var(--colab-bold-border-color);color:var(--colab-primary-text-color)}#output-area{display:flow-root}#output-area button.colab{background-color:var(--colab-secondary-surface-color);border:0;box-shadow:0 1px 3px 1px rgba(0,0,0,.15),0 1px 2px 0 rgba(0,0,0,.3);color:var(--colab-primary-text-color);font-family:var(--colab-chrome-font-family);font-size:11px;margin:0 4px 10px;padding:6px;text-transform:uppercase;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}#output-area button.colab:hover{background-color:var(--colab-highlighted-surface-color);cursor:pointer}#output-area .output-error button.error-details{background-color:#42a5f5;color:#fff}#output-area .output-error button.error-details:hover{background-color:#2196f3}#output-area .stdin-widget{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;display:inline;font-family:var(--colab-code-font-family);margin-right:10px;margin-top:10px;min-width:250px;padding:1px}#output-area .stdin-widget-hidden{visibility:hidden}.error .collapsed .extraneous{display:none}.error .error-expander{-webkit-box-align:center;-webkit-align-items:center;-moz-box-align:center;-ms-flex-align:center;align-items:center;cursor:pointer;display:-webkit-box;display:-webkit-flex;display:-moz-box;display:-ms-flexbox;display:flex}.error .error-expander hr{border:0;border-top:1px solid var(--colab-bold-border-color);-webkit-box-flex:1;-webkit-flex-grow:1;-moz-box-flex:1;-ms-flex-positive:1;flex-grow:1;height:1px;margin:0 10px;padding:0}.error .error-expander hr:first-child{max-width:240px}.error .error-expander svg{fill:var(--colab-icon-color);height:24px;stroke:var(--colab-icon-color);width:24px}.lm-Widget.lm-mod-hidden{display:none!important}audio:focus{outline:none}::-webkit-scrollbar{height:12px;width:12px}::-webkit-scrollbar-button{height:0;width:0}::-webkit-scrollbar-corner{background:transparent}::-webkit-scrollbar-thumb{background-clip:content-box;background-color:var(--colab-scrollbar-color);border:2px solid transparent;border-radius:8px;min-height:28px;min-width:28px}::-webkit-scrollbar-thumb:hover{background-color:var(--colab-scrollbar-hover-color)}::-webkit-scrollbar-thumb:active{background-color:var(--colab-scrollbar-active-color)}@supports not (selector(::-webkit-scrollbar)){*{scrollbar-color:var(--colab-scrollbar-color) transparent}}.string-repr{display:inline}.string-repr .quote{opacity:75%;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.string-repr pre{display:inline;white-space:pre-wrap;word-break:break-all}.string-repr button{color:var(--colab-primary-text-color);cursor:pointer;border:1px solid #767676;border-radius:2px;outline:none}.string-repr button.copy{background:transparent;border:none;margin-left:4px;opacity:0;padding:0;stroke:var(--colab-primary-text-color);-webkit-transition:opacity .2s;transition:opacity .2s}.string-repr button.copy svg{width:14px}.string-repr.hover button.copy,.string-repr:hover button.copy{opacity:1}.string-repr button.more{background-color:transparent;border-color:transparent;display:none;padding:0;-webkit-transition:background-color .2s,border-color .2s;transition:background-color .2s,border-color .2s}.string-repr.large button.more{display:inline}.string-repr.large.truncated button .collapse{display:none}.string-repr.large button .expand{display:none}.string-repr.large.truncated button .expand{display:inline}.string-repr.hover button.more,.string-repr:hover button.more{border-color:#767676}
+/*# sourceMappingURL=outputframe.css.map */
+//@ sourceURL=https://ssl.gstatic.com/colaboratory-static/common/dbc2de5528be69dbe805bada26491703/outputframe.css</style><base href="https://localhost:8080/"><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.relative{position:relative}.mx-auto{margin-left:auto;margin-right:auto}.mb-1{margin-bottom:0.25rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mt-1{margin-top:0.25rem}.mt-2{margin-top:0.5rem}.mt-6{margin-top:1.5rem}.mb-2{margin-bottom:0.5rem}.ml-auto{margin-left:auto}.flex{display:flex}.grid{display:grid}.h-48{height:12rem}.h-64{height:16rem}.h-\[600px\]{height:600px}.max-h-64{max-height:16rem}.w-full{width:100%}.w-14{width:3.5rem}.w-40{width:10rem}.max-w-7xl{max-width:80rem}.flex-1{flex:1 1 0%}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.flex-wrap{flex-wrap:wrap}.items-start{align-items:flex-start}.items-center{align-items:center}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-5{gap:1.25rem}.gap-1{gap:0.25rem}.gap-1\.5{gap:0.375rem}.gap-2{gap:0.5rem}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.overflow-hidden{overflow:hidden}.overflow-y-auto{overflow-y:auto}.truncate{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}.whitespace-pre-line{white-space:pre-line}.rounded{border-radius:0.25rem}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-b{border-bottom-width:1px}.border-l-4{border-left-width:4px}.border-l-2{border-left-width:2px}.border-indigo-600{--tw-border-opacity:1;border-color:rgb(79 70 229 / var(--tw-border-opacity, 1))}.border-orange-100{--tw-border-opacity:1;border-color:rgb(255 237 213 / var(--tw-border-opacity, 1))}.border-sky-100{--tw-border-opacity:1;border-color:rgb(224 242 254 / var(--tw-border-opacity, 1))}.border-slate-100{--tw-border-opacity:1;border-color:rgb(241 245 249 / var(--tw-border-opacity, 1))}.border-emerald-200{--tw-border-opacity:1;border-color:rgb(167 243 208 / var(--tw-border-opacity, 1))}.border-slate-200{--tw-border-opacity:1;border-color:rgb(226 232 240 / var(--tw-border-opacity, 1))}.bg-indigo-600{--tw-bg-opacity:1;background-color:rgb(79 70 229 / var(--tw-bg-opacity, 1))}.bg-orange-50{--tw-bg-opacity:1;background-color:rgb(255 247 237 / var(--tw-bg-opacity, 1))}.bg-sky-50{--tw-bg-opacity:1;background-color:rgb(240 249 255 / var(--tw-bg-opacity, 1))}.bg-slate-50\/50{background-color:rgb(248 250 252 / 0.5)}.bg-slate-500{--tw-bg-opacity:1;background-color:rgb(100 116 139 / var(--tw-bg-opacity, 1))}.bg-slate-700{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-white{--tw-bg-opacity:1;background-color:rgb(255 255 255 / var(--tw-bg-opacity, 1))}.bg-amber-100{--tw-bg-opacity:1;background-color:rgb(254 243 199 / var(--tw-bg-opacity, 1))}.bg-emerald-100{--tw-bg-opacity:1;background-color:rgb(209 250 229 / var(--tw-bg-opacity, 1))}.bg-emerald-50{--tw-bg-opacity:1;background-color:rgb(236 253 245 / var(--tw-bg-opacity, 1))}.bg-indigo-50{--tw-bg-opacity:1;background-color:rgb(238 242 255 / var(--tw-bg-opacity, 1))}.bg-rose-100{--tw-bg-opacity:1;background-color:rgb(255 228 230 / var(--tw-bg-opacity, 1))}.bg-slate-100{--tw-bg-opacity:1;background-color:rgb(241 245 249 / var(--tw-bg-opacity, 1))}.bg-slate-200{--tw-bg-opacity:1;background-color:rgb(226 232 240 / var(--tw-bg-opacity, 1))}.p-3{padding:0.75rem}.p-4{padding:1rem}.p-5{padding:1.25rem}.px-2{padding-left:0.5rem;padding-right:0.5rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.px-1\.5{padding-left:0.375rem;padding-right:0.375rem}.py-0\.5{padding-top:0.125rem;padding-bottom:0.125rem}.pb-2{padding-bottom:0.5rem}.pr-1{padding-right:0.25rem}.pb-1\.5{padding-bottom:0.375rem}.pl-3{padding-left:0.75rem}.text-2xl{font-size:1.5rem;line-height:2rem}.text-\[10px\]{font-size:10px}.text-\[11px\]{font-size:11px}.text-\[12px\]{font-size:12px}.text-base{font-size:1rem;line-height:1.5rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-\[13px\]{font-size:13px}.font-bold{font-weight:700}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-relaxed{line-height:1.625}.tracking-wider{letter-spacing:0.05em}.text-amber-300{--tw-text-opacity:1;color:rgb(252 211 77 / var(--tw-text-opacity, 1))}.text-emerald-500{--tw-text-opacity:1;color:rgb(16 185 129 / var(--tw-text-opacity, 1))}.text-indigo-500{--tw-text-opacity:1;color:rgb(99 102 241 / var(--tw-text-opacity, 1))}.text-orange-600{--tw-text-opacity:1;color:rgb(234 88 12 / var(--tw-text-opacity, 1))}.text-orange-800{--tw-text-opacity:1;color:rgb(154 52 18 / var(--tw-text-opacity, 1))}.text-rose-500{--tw-text-opacity:1;color:rgb(244 63 94 / var(--tw-text-opacity, 1))}.text-sky-500{--tw-text-opacity:1;color:rgb(14 165 233 / var(--tw-text-opacity, 1))}.text-sky-600{--tw-text-opacity:1;color:rgb(2 132 199 / var(--tw-text-opacity, 1))}.text-sky-800{--tw-text-opacity:1;color:rgb(7 89 133 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-700{--tw-text-opacity:1;color:rgb(51 65 85 / var(--tw-text-opacity, 1))}.text-slate-800{--tw-text-opacity:1;color:rgb(30 41 59 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-700{--tw-text-opacity:1;color:rgb(180 83 9 / var(--tw-text-opacity, 1))}.text-emerald-700{--tw-text-opacity:1;color:rgb(4 120 87 / var(--tw-text-opacity, 1))}.text-indigo-600{--tw-text-opacity:1;color:rgb(79 70 229 / var(--tw-text-opacity, 1))}.text-rose-700{--tw-text-opacity:1;color:rgb(190 18 60 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.shadow-sm{--tw-shadow:0 1px 2px 0 rgb(0 0 0 / 0.05);--tw-shadow-colored:0 1px 2px 0 var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-shadow{transition-property:box-shadow;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.hover\:bg-indigo-700:hover{--tw-bg-opacity:1;background-color:rgb(67 56 202 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-600:hover{--tw-bg-opacity:1;background-color:rgb(71 85 105 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-900:hover{--tw-bg-opacity:1;background-color:rgb(15 23 42 / var(--tw-bg-opacity, 1))}.hover\:shadow-md:hover{--tw-shadow:0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}@media (min-width: 768px){.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}}@media (min-width: 1024px){.lg\:grid-cols-6{grid-template-columns:repeat(6, minmax(0, 1fr))}}</style></head><body><div id="output-area"><span id="output-header"> </span><div id="output-body"><div class="stream output-id-5"><div class="output_subarea output_text"><pre>✅ Audit ground truth: 100 klaim | risiko {'low': 76, 'medium': 4, 'high': 6, 'fraud': 14} | sentimen {'Negatif': 24, 'Netral': 14, 'Positif': 62} | 8 kontradiksi
+📌 Menggunakan model: mistral-oasis:24b untuk mensimulasikan Agen Oasis di Twitter/Reddit (saluran teks Aegis-JKN)
+⚙️ Memulai simulasi otonom sebanyak 300 kali...
+⏳ Memproses Simulasi Langkah ke-1/300...
+⏳ Memproses Simulasi Langkah ke-100/300...
+⏳ Memproses Simulasi Langkah ke-200/300...
+⏳ Memproses Simulasi Langkah ke-300/300...
+
+🟢 [SUKSES] Simulasi 300 langkah selesai!
+📊 4 sampel LLM (mistral-oasis:24b) + fallback heuristik lokal; 24 log Twitter &amp; 24 log Reddit dikompilasi.
+
+🧮 RINGKASAN MATEMATIKA AEGIS-JKN (label: simulasi sintetis, prevalensi oversampled (14%) — estimasi lapangan 3-7% (label estimasi literatur))
+   • Saluran fitur   : 4563 edges (cosine ≥ 0.85) | cloning KLM016–KLM017: TERDETEKSI (cos = 1.000)
+   • Late fusion     : p_fused = p_graph + 0.1·f_text·(1 − p_graph) | sinyal teks aktif pada 17 klaim
+   • Deteksi fraud   : 14/14 (100%) pada antrian 20 klaim (20% dari 100) — target ≥ 90%
+   • Hit-rate sindikat: SYND-01 3/3, SYND-02 3/3, SYND-03 6/6, SYND-04 2/2, SYND-05 2/2
+   • Kontradiksi prioritas: 8/8 klaim (KLM001–006, KLM018, KLM024)
+   • Akurasi sentimen simulasi vs GT: 93.0% (186/200 klasifikasi)
+   • Prevalensi fraud: 14% (oversampled) | ROI HITL: 20→3 menit/berkas → kapasitas ±6.667 berkas
+
+🎯 PROTOKOL VALIDASI v2.1 → ✅ SESUAI
+   ✅ Kriteria integritas: terpenuhi
+   ✅ Kriteria deteksi: terpenuhi
+   ✅ Kriteria sindikat: terpenuhi
+   ✅ Kriteria kontradiksi: terpenuhi
+Menyiapkan Dashboard Interaktif...
+
+</pre></div></div><div class="display_data output-id-6"><div class="output_subarea output_html rendered_html">
+
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Aegis-JKN — Simulasi Oasis</title>
+    
+    
+    <style>
+        .custom-scrollbar::-webkit-scrollbar { width: 6px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 8px;}
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #cbd5e1; border-radius: 8px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #94a3b8; }
+
+        /* ── Mode cetak / Simpan PDF (window.print() atau Ctrl+P) ── */
+        @media print {
+            @page { size: A4 landscape; margin: 8mm; }
+            body { background: #fff !important; padding: 0 !important; }
+            .no-print { display: none !important; }              /* sembunyikan tombol cetak */
+            .bg-slate-50 { background: #fff !important; }
+            .grid > div, #tw-feed > div, #rd-feed > div, #queue-list > div {
+                box-shadow: none !important;
+                break-inside: avoid; page-break-inside: avoid;    /* kartu tidak terpotong halaman */
+            }
+            /* Feed & antrian dibuka penuh (tanpa scroll) saat dicetak */
+            .h-\[600px\] { height: auto !important; max-height: none !important; overflow: visible !important; }
+            .max-h-64 { max-height: none !important; overflow: visible !important; }
+        }
+    </style>
+
+
+    <div class="max-w-7xl mx-auto">
+
+        <!-- Header -->
+        <div class="mb-6 flex justify-between items-center bg-white p-5 rounded-xl shadow-sm border-l-4 border-indigo-600">
+            <div>
+                <h1 class="text-xl font-bold text-slate-800">🛡️ Dashboard Aegis-JKN — Simulasi Agen Sosial Media (Oasis)</h1>
+                <p class="text-slate-500 text-sm mt-1">Healthkathon BPJS Kesehatan 2026 · MHGSL Fraud Intelligence · Saluran Teks × Late Fusion</p>
+            </div>
+            <div class="flex items-center gap-3 flex-wrap">
+                <button onclick="downloadHTML()" class="no-print bg-indigo-600 hover:bg-indigo-700 text-white text-xs font-semibold px-3 py-2 rounded-lg shadow-sm transition-colors" title="Unduh HTML mandiri — bisa dibuka di mana saja, di-host statis, atau di-embed ke proyek (React/HTML/JS)">⬇️ Unduh HTML</button>
+                <button onclick="downloadJSON()" class="no-print bg-slate-500 hover:bg-slate-600 text-white text-xs font-semibold px-3 py-2 rounded-lg shadow-sm transition-colors" title="Unduh payload data JSON untuk membangun ulang UI dengan stack sendiri">⬇️ Unduh JSON</button>
+                <button onclick="window.print()" class="no-print bg-slate-700 hover:bg-slate-900 text-white text-xs font-semibold px-3 py-2 rounded-lg shadow-sm transition-colors" title="Ctrl+P → pilih tujuan 'Save as PDF' (aktifkan Background graphics)">🖨️ Cetak / Simpan PDF</button>
+                <div id="status-badge" class="bg-emerald-50 text-emerald-700 px-3 py-1 rounded-lg text-sm font-semibold border border-emerald-200">✅ Protokol v2.1: SESUAI</div>
+            </div>
+        </div>
+
+        <!-- KPI Cards -->
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-4 mb-6">
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Klaim Sintetis</p>
+                <h2 class="text-2xl font-bold text-slate-700 mt-1" id="kpi-total">100</h2>
+                <p class="text-[10px] text-slate-400">20 pasien · 12 dokter · 6 FKRTL</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Fraud Terdeteksi</p>
+                <h2 class="text-2xl font-bold text-rose-500 mt-1" id="kpi-det">14/14</h2>
+                <p class="text-[10px] text-slate-400" id="kpi-det-sub">100% pada antrian ≤20%</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Antrian Investigasi</p>
+                <h2 class="text-2xl font-bold text-indigo-500 mt-1" id="kpi-queue">20</h2>
+                <p class="text-[10px] text-slate-400" id="kpi-queue-sub">20% klaim · kontradiksi prioritas 8/8</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Sentimen GT (Target)</p>
+                <h2 class="text-base font-bold text-slate-700 mt-2" id="kpi-gtsent">62P · 14N · 24Neg</h2>
+                <p class="text-[10px] text-slate-400">62 positif · 14 netral · 24 negatif</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Akurasi Sentimen Simulasi</p>
+                <h2 class="text-2xl font-bold text-emerald-500 mt-1" id="kpi-acc">93%</h2>
+                <p class="text-[10px] text-slate-400">klasifikasi leksikon vs ground truth (200 uji)</p>
+            </div>
+            <div class="bg-white p-4 rounded-xl shadow-sm border border-slate-100">
+                <p class="text-[10px] text-slate-500 font-semibold uppercase tracking-wider">Efisiensi HITL (ROI)</p>
+                <h2 class="text-2xl font-bold text-sky-500 mt-1" id="kpi-cap">±6.667</h2>
+                <p class="text-[10px] text-slate-400">telaah 20→3 mnt/berkas → kapasitas verifikator</p>
+            </div>
+        </div>
+
+        <!-- Charts Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5 mb-6">
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-sm font-bold text-slate-700 mb-4 border-b pb-2">Sentimen Simulasi Twitter (Saluran Teks)</h3>
+                <div class="relative h-48 w-full flex justify-center"><canvas id="twChart" style="display: block; box-sizing: border-box; height: 192px; width: 587.3px;" width="440" height="144"></canvas></div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-sm font-bold text-slate-700 mb-4 border-b pb-2">Sentimen Simulasi Reddit (Saluran Teks)</h3>
+                <div class="relative h-48 w-full flex justify-center"><canvas id="rdChart" style="display: block; box-sizing: border-box; height: 192px; width: 587.3px;" width="440" height="144"></canvas></div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-sm font-bold text-slate-700 mb-4 border-b pb-2">Distribusi Risiko Ground Truth (Skala: &lt;0.35 low · 0.35–0.6 med · 0.6–0.8 high · &gt;0.8 fraud)</h3>
+                <div class="relative h-48 w-full"><canvas id="riskChart" style="display: block; box-sizing: border-box; height: 192px; width: 587.3px;" width="440" height="144"></canvas></div>
+            </div>
+            <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100">
+                <h3 class="text-sm font-bold text-slate-700 mb-4 border-b pb-2">Hit-Rate per Sindikat pada Antrian Investigasi (%)</h3>
+                <div class="relative h-48 w-full"><canvas id="syndChart" style="display: block; box-sizing: border-box; height: 192px; width: 587.3px;" width="440" height="144"></canvas></div>
+            </div>
+        </div>
+
+        <!-- Antrian Investigasi (Late Fusion) -->
+        <div class="bg-white p-5 rounded-xl shadow-sm border border-slate-100 mb-6">
+            <h3 class="text-sm font-bold text-slate-700 mb-1">🎯 Antrian Investigasi — Top-10 Skor Fusion</h3>
+            <p class="text-[11px] text-slate-400 mb-4">p_fused = p_graph + γ·f_text·(1 − p_graph) · γ = 0.10 · θ_feat = 0.85 · sinyal teks hanya mengangkat prioritas bila konsisten dengan skor graf</p>
+            <div class="relative h-64 w-full mb-4"><canvas id="queueChart" style="display: block; box-sizing: border-box; height: 256px; width: 1237.3px;" width="928" height="192"></canvas></div>
+            <div id="queue-list" class="text-[12px] space-y-2 max-h-64 overflow-y-auto custom-scrollbar pr-1">
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM003</span>
+                <span class="w-40 truncate text-slate-500">Upcoding</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-01</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 1</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-rose-500">0.955</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM002</span>
+                <span class="w-40 truncate text-slate-500">Upcoding</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-01</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 1</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-rose-500">0.946</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM006</span>
+                <span class="w-40 truncate text-slate-500">Phantom Billing</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-02</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-rose-500">0.946</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM001</span>
+                <span class="w-40 truncate text-slate-500">Upcoding</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-01</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 1</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-rose-500">0.937</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM005</span>
+                <span class="w-40 truncate text-slate-500">Phantom Billing</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-02</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-rose-500">0.937</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM004</span>
+                <span class="w-40 truncate text-slate-500">Phantom Billing</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-02</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-rose-500">0.928</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM014</span>
+                <span class="w-40 truncate text-slate-500">Drug Diversion</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-04</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 0.8 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.892</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM012</span>
+                <span class="w-40 truncate text-slate-500">Unbundling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-03</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.883</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM010</span>
+                <span class="w-40 truncate text-slate-500">Unbundling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-03</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.874</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM011</span>
+                <span class="w-40 truncate text-slate-500">Unbundling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-03</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.874</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM013</span>
+                <span class="w-40 truncate text-slate-500">Drug Diversion</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-04</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.874</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM008</span>
+                <span class="w-40 truncate text-slate-500">Unbundling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-03</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.865</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM009</span>
+                <span class="w-40 truncate text-slate-500">Unbundling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-03</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.865</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM007</span>
+                <span class="w-40 truncate text-slate-500">Unbundling</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-03</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-rose-500">0.856</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM016</span>
+                <span class="w-40 truncate text-slate-500">Cloning</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-05</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-slate-600">0.802</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM017</span>
+                <span class="w-40 truncate text-slate-500">Cloning</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">SYND-05</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 1 · topologi 1 · semantik 0.6</span>
+                
+                <span class="ml-auto font-bold text-slate-600">0.790</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM018</span>
+                <span class="w-40 truncate text-slate-500">Prolonged Stay</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">non-sindikat</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 0 · topologi 1 · semantik 0.2</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>
+                <span class="ml-auto font-bold text-slate-600">0.766</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM021</span>
+                <span class="w-40 truncate text-slate-500">Anomali</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">non-sindikat</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 0 · topologi 1 · semantik 0.2</span>
+                
+                <span class="ml-auto font-bold text-slate-600">0.680</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM020</span>
+                <span class="w-40 truncate text-slate-500">Anomali</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">non-sindikat</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 0 · topologi 1 · semantik 0.2</span>
+                
+                <span class="ml-auto font-bold text-slate-600">0.660</span>
+            </div>
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">KLM019</span>
+                <span class="w-40 truncate text-slate-500">Anomali Biaya</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">non-sindikat</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur 0 · topologi 1 · semantik 0.2</span>
+                
+                <span class="ml-auto font-bold text-slate-600">0.620</span>
+            </div></div>
+        </div>
+
+        <!-- Live Feed Section -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-5">
+            <!-- Twitter Feed -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden flex flex-col h-[600px]">
+                <div class="bg-sky-50 border-b border-sky-100 p-3 flex justify-between items-center">
+                    <h3 class="font-bold text-sky-800 text-sm">🐤 Log Twitter (Umpan Balik Pasien)</h3>
+                    <span class="text-xs bg-white px-2 py-1 rounded text-sky-600 font-medium" id="tw-count-badge">24 Post</span>
+                </div>
+                <div id="tw-feed" class="p-4 overflow-y-auto custom-scrollbar flex-1 space-y-4 bg-slate-50/50">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM001</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #1 · ❤ 12</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM002</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #100 · ❤ 19</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM003</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #200 · ❤ 26</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM004</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #300 · ❤ 33</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM005</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 40</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM006</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 47</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM007</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 8</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM008</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 15</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM009</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 22</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM010</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 29</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM011</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 36</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM012</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 43</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM013</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Resep insulin saya 24 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 50</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM014</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Resep insulin saya 30 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 11</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM015</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-slate-200 text-slate-700">Netral</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Hari ini kontrol rutin ke RS Bahari Medika E untuk diabetes melitus tipe 2. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 18</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM016</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Tagihan BPJS saya identik persis dengan pasien lain: tanggal, diagnosis, dan biaya sama. Seperti rekam medis diklaim orang lain. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 25</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM017</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-slate-200 text-slate-700">Netral</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Hari ini kontrol rutin ke RSUD Giri Menang F untuk apendisitis akut. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 32</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM018</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Dirawat 6 hari padahal indikasinya pneumonia, lama banget tanpa penjelasan medis. Kecewa dengan RS Aegis Medika A! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 39</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM019</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-slate-200 text-slate-700">Netral</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Hari ini kontrol rutin ke RSUD Harapan D untuk infark miokard akut. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 46</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM020</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-emerald-100 text-emerald-700">Positif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena persalinan spontan, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 7</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM021</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-emerald-100 text-emerald-700">Positif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Alhamdulillah layanan JKN di RSUD Harapan D sangat baik dan cepat. Dirawat karena pneumonia, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 14</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM022</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-slate-200 text-slate-700">Netral</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Hari ini kontrol rutin ke RS Aegis Medika A untuk hernia inguinalis. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 21</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM023</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-emerald-100 text-emerald-700">Positif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena kalkulus ginjal, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 28</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM024</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">Ada tindakan apendektomi di tagihan yang saya diragukan, padahal saya hanya konsultasi ringan. Kecewa! #JKN #BPJSKesehatan</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 35</div>
+                    </div></div>
+            </div>
+
+            <!-- Reddit Feed -->
+            <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden flex flex-col h-[600px]">
+                <div class="bg-orange-50 border-b border-orange-100 p-3 flex justify-between items-center">
+                    <h3 class="font-bold text-orange-800 text-sm">👽 Log Reddit (Narasi &amp; Diskusi Klaim)</h3>
+                    <span class="text-xs bg-white px-2 py-1 rounded text-orange-600 font-medium" id="rd-count-badge">24 Post</span>
+                </div>
+                <div id="rd-feed" class="p-4 overflow-y-auto custom-scrollbar flex-1 space-y-4 bg-slate-50/50">
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM001</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A
+
+Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #1 · ❤ 13</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM002</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A
+
+Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #100 · ❤ 20</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM003</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A
+
+Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #200 · ❤ 27</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM004</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C
+
+Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">Langkah #300 · ❤ 34</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM005</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C
+
+Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 41</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM006</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C
+
+Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 48</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM007</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B
+
+Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 9</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM008</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B
+
+Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 16</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM009</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B
+
+Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 23</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM010</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B
+
+Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 30</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM011</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B
+
+Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 37</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM012</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B
+
+Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 44</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM013</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E
+
+Resep insulin saya 24 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 5</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM014</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E
+
+Resep insulin saya 30 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 12</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM015</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-rose-500 font-semibold">✗ beda GT (Netral)</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E
+
+Hari ini kontrol rutin ke RS Bahari Medika E untuk diabetes melitus tipe 2. Pengobatan sesuai jadwal, tidak ada catatan khusus.
+
+💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 19</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM016</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F
+
+Tagihan BPJS saya identik persis dengan pasien lain: tanggal, diagnosis, dan biaya sama. Seperti rekam medis diklaim orang lain. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 26</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM017</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-rose-500 font-semibold">✗ beda GT (Netral)</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F
+
+Hari ini kontrol rutin ke RSUD Giri Menang F untuk apendisitis akut. Pengobatan sesuai jadwal, tidak ada catatan khusus.
+
+💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 33</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM018</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A
+
+Dirawat 6 hari padahal indikasinya pneumonia, lama banget tanpa penjelasan medis. Kecewa dengan RS Aegis Medika A!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 40</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM019</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-rose-500 font-semibold">✗ beda GT (Netral)</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Harapan D
+
+Hari ini kontrol rutin ke RSUD Harapan D untuk infark miokard akut. Pengobatan sesuai jadwal, tidak ada catatan khusus.
+
+💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 47</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM020</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-emerald-100 text-emerald-700">Positif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F
+
+Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena persalinan spontan, semuanya lancar, perawatnya ramah. Terima kasih BPJS!
+
+💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 8</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM021</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-emerald-100 text-emerald-700">Positif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Harapan D
+
+Alhamdulillah layanan JKN di RSUD Harapan D sangat baik dan cepat. Dirawat karena pneumonia, semuanya lancar, perawatnya ramah. Terima kasih BPJS!
+
+💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 15</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM022</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-rose-500 font-semibold">✗ beda GT (Netral)</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A
+
+Hari ini kontrol rutin ke RS Aegis Medika A untuk hernia inguinalis. Pengobatan sesuai jadwal, tidak ada catatan khusus.
+
+💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 22</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM023</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-emerald-100 text-emerald-700">Positif</span>
+                                
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F
+
+Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena kalkulus ginjal, semuanya lancar, perawatnya ramah. Terima kasih BPJS!
+
+💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 29</div>
+                    </div>
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 KLM024</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-rose-100 text-rose-700">Negatif</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded bg-slate-100 text-slate-500">🧮 Heuristik Lokal</span>
+                            </div>
+                            <span class="text-[10px] text-emerald-500 font-semibold">✓ sesuai GT</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">[Diskusi] Pengalaman klaim JKN di RSUD Harapan D
+
+Ada tindakan apendektomi di tagihan yang saya diragukan, padahal saya hanya konsultasi ringan. Kecewa!
+
+💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.</div>
+                        <div class="text-[10px] text-slate-400 mt-2">❤ 36</div>
+                    </div></div>
+            </div>
+        </div>
+
+        <!-- Footer: Kejujuran Label (Notion §2.4 & protokol v2.1) -->
+        <div class="mt-6 bg-slate-800 text-slate-300 p-4 rounded-xl text-[11px] leading-relaxed">
+            <p>⚠️ <strong>Kejujuran label:</strong> <span id="honesty-note" class="text-amber-300">simulasi sintetis, prevalensi oversampled (14%) — estimasi lapangan 3-7% (label estimasi literatur)</span></p>
+            <p class="mt-1">🧮 <span id="meta-note">seed 20260707 · vv2.1 · θ_feat 0.85 · γ 0.1 · 300 langkah · model mistral-oasis:24b</span></p>
+            <p class="mt-1">📌 Sentimen negatif ≠ bukti fraud — keluhan layanan murni (antrean, parkir, kebersihan) berfungsi sebagai <em>negative control</em>; sinyal tekstual dikonfirmasi silang dengan skor graf MHGSL melalui <em>late fusion</em> (Notion §3.3).</p>
+            <p class="mt-1">🖨️ Cetak PDF: klik tombol di header atau Ctrl+P → tujuan <em>"Save as PDF"</em> · aktifkan <em>Background graphics</em> agar warna kartu &amp; chart tercetak optimal · format A4 landscape otomatis.</p>
+            <p class="mt-1">🧩 Integrasi proyek: tombol <em>⬇️ Unduh HTML</em> menghasilkan file HTML mandiri (hosting statis / embed <code>&lt;iframe&gt;</code> di React) · tombol <em>⬇️ Unduh JSON</em> menghasilkan payload data bersih untuk membangun ulang UI dengan stack sendiri.</p>
+        </div>
+    </div>
+
+    <!-- SCRIPT LOGIKA DASHBOARD -->
+    <script type="">
+        // Data disuntik dari Python
+        const D = {"meta": {"version": "v2.1", "seed": 20260707, "theta_feat": 0.85, "gamma_text": 0.1, "honesty": "simulasi sintetis, prevalensi oversampled (14%) — estimasi lapangan 3-7% (label estimasi literatur)", "model": "mistral-oasis:24b", "steps": 300}, "kpi": {"total_claims": 100, "fraud_total": 14, "fraud_detected": 14, "det_rate": 100.0, "queue_size": 20, "queue_rate": 20, "status": "SESUAI", "ok": true, "accuracy": 93.0, "feat_edges": 4563, "synd_density": {"SYND-01": 1.0, "SYND-02": 1.0, "SYND-03": 1.0, "SYND-04": 1.0, "SYND-05": 1.0}, "kontra_ok": 8, "kontra_total": 8, "capacity": 6667, "prevalensi": 14}, "gtSent": [62, 14, 24], "twSent": [62, 14, 24], "rdSent": [62, 0, 38], "riskDist": [76, 4, 6, 14], "syndHit": {"SYND-01": {"hit": 3, "total": 3, "rate": 100.0, "modus": "Upcoding"}, "SYND-02": {"hit": 3, "total": 3, "rate": 100.0, "modus": "Phantom Billing"}, "SYND-03": {"hit": 6, "total": 6, "rate": 100.0, "modus": "Unbundling"}, "SYND-04": {"hit": 2, "total": 2, "rate": 100.0, "modus": "Drug Diversion"}, "SYND-05": {"hit": 2, "total": 2, "rate": 100.0, "modus": "Cloning"}}, "queue": [{"id": "KLM003", "modus": "Upcoding", "sindikat": "SYND-01", "p": 0.955, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 1.0}, "kontra": true}, {"id": "KLM002", "modus": "Upcoding", "sindikat": "SYND-01", "p": 0.946, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 1.0}, "kontra": true}, {"id": "KLM006", "modus": "Phantom Billing", "sindikat": "SYND-02", "p": 0.946, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": true}, {"id": "KLM001", "modus": "Upcoding", "sindikat": "SYND-01", "p": 0.937, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 1.0}, "kontra": true}, {"id": "KLM005", "modus": "Phantom Billing", "sindikat": "SYND-02", "p": 0.937, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": true}, {"id": "KLM004", "modus": "Phantom Billing", "sindikat": "SYND-02", "p": 0.928, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": true}, {"id": "KLM014", "modus": "Drug Diversion", "sindikat": "SYND-04", "p": 0.892, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 0.8, "semantik": 0.6}, "kontra": false}, {"id": "KLM012", "modus": "Unbundling", "sindikat": "SYND-03", "p": 0.883, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM010", "modus": "Unbundling", "sindikat": "SYND-03", "p": 0.874, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM011", "modus": "Unbundling", "sindikat": "SYND-03", "p": 0.874, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM013", "modus": "Drug Diversion", "sindikat": "SYND-04", "p": 0.874, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM008", "modus": "Unbundling", "sindikat": "SYND-03", "p": 0.865, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM009", "modus": "Unbundling", "sindikat": "SYND-03", "p": 0.865, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM007", "modus": "Unbundling", "sindikat": "SYND-03", "p": 0.856, "risk": "fraud", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM016", "modus": "Cloning", "sindikat": "SYND-05", "p": 0.802, "risk": "high", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM017", "modus": "Cloning", "sindikat": "SYND-05", "p": 0.79, "risk": "high", "chan": {"fitur": 1.0, "topologi": 1.0, "semantik": 0.6}, "kontra": false}, {"id": "KLM018", "modus": "Prolonged Stay", "sindikat": "-", "p": 0.766, "risk": "high", "chan": {"fitur": 0.0, "topologi": 1.0, "semantik": 0.2}, "kontra": true}, {"id": "KLM021", "modus": "Anomali", "sindikat": "-", "p": 0.68, "risk": "high", "chan": {"fitur": 0.0, "topologi": 1.0, "semantik": 0.2}, "kontra": false}, {"id": "KLM020", "modus": "Anomali", "sindikat": "-", "p": 0.66, "risk": "high", "chan": {"fitur": 0.0, "topologi": 1.0, "semantik": 0.2}, "kontra": false}, {"id": "KLM019", "modus": "Anomali Biaya", "sindikat": "-", "p": 0.62, "risk": "high", "chan": {"fitur": 0.0, "topologi": 1.0, "semantik": 0.2}, "kontra": false}], "twFeed": [{"step": 1, "claim": "KLM001", "text": "Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 12}, {"step": 100, "claim": "KLM002", "text": "Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 19}, {"step": 200, "claim": "KLM003", "text": "Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 26}, {"step": 300, "claim": "KLM004", "text": "Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 33}, {"step": 0, "claim": "KLM005", "text": "Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 40}, {"step": 0, "claim": "KLM006", "text": "Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 47}, {"step": 0, "claim": "KLM007", "text": "Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 8}, {"step": 0, "claim": "KLM008", "text": "Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 15}, {"step": 0, "claim": "KLM009", "text": "Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 22}, {"step": 0, "claim": "KLM010", "text": "Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 29}, {"step": 0, "claim": "KLM011", "text": "Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 36}, {"step": 0, "claim": "KLM012", "text": "Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 43}, {"step": 0, "claim": "KLM013", "text": "Resep insulin saya 24 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 50}, {"step": 0, "claim": "KLM014", "text": "Resep insulin saya 30 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 11}, {"step": 0, "claim": "KLM015", "text": "Hari ini kontrol rutin ke RS Bahari Medika E untuk diabetes melitus tipe 2. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan", "sentiment": "Netral", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 18}, {"step": 0, "claim": "KLM016", "text": "Tagihan BPJS saya identik persis dengan pasien lain: tanggal, diagnosis, dan biaya sama. Seperti rekam medis diklaim orang lain. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 25}, {"step": 0, "claim": "KLM017", "text": "Hari ini kontrol rutin ke RSUD Giri Menang F untuk apendisitis akut. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan", "sentiment": "Netral", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 32}, {"step": 0, "claim": "KLM018", "text": "Dirawat 6 hari padahal indikasinya pneumonia, lama banget tanpa penjelasan medis. Kecewa dengan RS Aegis Medika A! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 39}, {"step": 0, "claim": "KLM019", "text": "Hari ini kontrol rutin ke RSUD Harapan D untuk infark miokard akut. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan", "sentiment": "Netral", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 46}, {"step": 0, "claim": "KLM020", "text": "Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena persalinan spontan, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan", "sentiment": "Positif", "sentiment_gt": "Positif", "f_text": 0, "source": "heuristik-lokal", "likes": 7}, {"step": 0, "claim": "KLM021", "text": "Alhamdulillah layanan JKN di RSUD Harapan D sangat baik dan cepat. Dirawat karena pneumonia, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan", "sentiment": "Positif", "sentiment_gt": "Positif", "f_text": 0, "source": "heuristik-lokal", "likes": 14}, {"step": 0, "claim": "KLM022", "text": "Hari ini kontrol rutin ke RS Aegis Medika A untuk hernia inguinalis. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan", "sentiment": "Netral", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 21}, {"step": 0, "claim": "KLM023", "text": "Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena kalkulus ginjal, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan", "sentiment": "Positif", "sentiment_gt": "Positif", "f_text": 0, "source": "heuristik-lokal", "likes": 28}, {"step": 0, "claim": "KLM024", "text": "Ada tindakan apendektomi di tagihan yang saya diragukan, padahal saya hanya konsultasi ringan. Kecewa! #JKN #BPJSKesehatan", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 35}], "rdFeed": [{"step": 1, "claim": "KLM001", "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDiagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 13}, {"step": 100, "claim": "KLM002", "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDiagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 20}, {"step": 200, "claim": "KLM003", "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDiagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 27}, {"step": 300, "claim": "KLM004", "text": "[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C\n\nSaya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 34}, {"step": 0, "claim": "KLM005", "text": "[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C\n\nSaya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 41}, {"step": 0, "claim": "KLM006", "text": "[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C\n\nSaya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 48}, {"step": 0, "claim": "KLM007", "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 9}, {"step": 0, "claim": "KLM008", "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 16}, {"step": 0, "claim": "KLM009", "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 23}, {"step": 0, "claim": "KLM010", "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 30}, {"step": 0, "claim": "KLM011", "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 37}, {"step": 0, "claim": "KLM012", "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 44}, {"step": 0, "claim": "KLM013", "text": "[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E\n\nResep insulin saya 24 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 5}, {"step": 0, "claim": "KLM014", "text": "[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E\n\nResep insulin saya 30 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 12}, {"step": 0, "claim": "KLM015", "text": "[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E\n\nHari ini kontrol rutin ke RS Bahari Medika E untuk diabetes melitus tipe 2. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.", "sentiment": "Negatif", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 19}, {"step": 0, "claim": "KLM016", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nTagihan BPJS saya identik persis dengan pasien lain: tanggal, diagnosis, dan biaya sama. Seperti rekam medis diklaim orang lain. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 26}, {"step": 0, "claim": "KLM017", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nHari ini kontrol rutin ke RSUD Giri Menang F untuk apendisitis akut. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.", "sentiment": "Negatif", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 33}, {"step": 0, "claim": "KLM018", "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDirawat 6 hari padahal indikasinya pneumonia, lama banget tanpa penjelasan medis. Kecewa dengan RS Aegis Medika A!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 40}, {"step": 0, "claim": "KLM019", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Harapan D\n\nHari ini kontrol rutin ke RSUD Harapan D untuk infark miokard akut. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.", "sentiment": "Negatif", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 47}, {"step": 0, "claim": "KLM020", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nAlhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena persalinan spontan, semuanya lancar, perawatnya ramah. Terima kasih BPJS!\n\n💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.", "sentiment": "Positif", "sentiment_gt": "Positif", "f_text": 0, "source": "heuristik-lokal", "likes": 8}, {"step": 0, "claim": "KLM021", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Harapan D\n\nAlhamdulillah layanan JKN di RSUD Harapan D sangat baik dan cepat. Dirawat karena pneumonia, semuanya lancar, perawatnya ramah. Terima kasih BPJS!\n\n💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.", "sentiment": "Positif", "sentiment_gt": "Positif", "f_text": 0, "source": "heuristik-lokal", "likes": 15}, {"step": 0, "claim": "KLM022", "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nHari ini kontrol rutin ke RS Aegis Medika A untuk hernia inguinalis. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.", "sentiment": "Negatif", "sentiment_gt": "Netral", "f_text": 0, "source": "heuristik-lokal", "likes": 22}, {"step": 0, "claim": "KLM023", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nAlhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena kalkulus ginjal, semuanya lancar, perawatnya ramah. Terima kasih BPJS!\n\n💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.", "sentiment": "Positif", "sentiment_gt": "Positif", "f_text": 0, "source": "heuristik-lokal", "likes": 29}, {"step": 0, "claim": "KLM024", "text": "[Diskusi] Pengalaman klaim JKN di RSUD Harapan D\n\nAda tindakan apendektomi di tagihan yang saya diragukan, padahal saya hanya konsultasi ringan. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.", "sentiment": "Negatif", "sentiment_gt": "Negatif", "f_text": 1, "source": "heuristik-lokal", "likes": 36}]};
+
+        const esc = s => String(s).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+
+        // ── Unduh file dari dalam dashboard (integrasi proyek React/HTML/JS) ──
+        // Blob download; di iframe output Colab bisa diblokir sandbox — dalam kasus
+        // itu gunakan files.download dari Python, atau tombol ini saat HTML dibuka
+        // standalone. Chart digambar ulang otomatis saat file dibuka kembali.
+        function downloadFile(name, content, type) {
+            const blob = new Blob([content], { type });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = name;
+            document.body.appendChild(a);
+            a.click();
+            a.remove();
+        }
+        function downloadHTML() {
+            const html = '<!DOCTYPE html>\n' + document.documentElement.cloneNode(true).outerHTML;
+            downloadFile('dashboard-aegis-jkn.html', html, 'text/html;charset=utf-8');
+        }
+        function downloadJSON() {
+            downloadFile('payload-aegis-jkn.json', JSON.stringify(D, null, 2), 'application/json');
+        }
+
+        // Status badge protokol v2.1
+        const sb = document.getElementById('status-badge');
+        if (D.kpi.ok) {
+            sb.className = 'bg-emerald-50 text-emerald-700 px-3 py-1 rounded-lg text-sm font-semibold border border-emerald-200';
+            sb.innerText = '✅ Protokol v2.1: SESUAI';
+        } else {
+            sb.className = 'bg-rose-50 text-rose-700 px-3 py-1 rounded-lg text-sm font-semibold border border-rose-200';
+            sb.innerText = '❌ Protokol v2.1: TIDAK SESUAI';
+        }
+
+        // KPI
+        document.getElementById('kpi-total').innerText = D.kpi.total_claims;
+        document.getElementById('kpi-det').innerText = D.kpi.fraud_detected + '/' + D.kpi.fraud_total;
+        document.getElementById('kpi-det-sub').innerText = D.kpi.det_rate + '% pada antrian ≤' + D.kpi.queue_rate + '%';
+        document.getElementById('kpi-queue').innerText = D.kpi.queue_size;
+        document.getElementById('kpi-queue-sub').innerText = D.kpi.queue_rate + '% klaim · kontradiksi prioritas ' + D.kpi.kontra_ok + '/' + D.kpi.kontra_total;
+        document.getElementById('kpi-gtsent').innerText = D.gtSent[0] + 'P · ' + D.gtSent[1] + 'N · ' + D.gtSent[2] + 'Neg';
+        document.getElementById('kpi-acc').innerText = D.kpi.accuracy + '%';
+        document.getElementById('kpi-cap').innerText = '±' + D.kpi.capacity.toLocaleString('id-ID');
+        document.getElementById('honesty-note').innerText = D.meta.honesty;
+        document.getElementById('meta-note').innerText = 'seed ' + D.meta.seed + ' · v' + D.meta.version +
+            ' · θ_feat ' + D.meta.theta_feat + ' · γ ' + D.meta.gamma_text +
+            ' · ' + D.meta.steps + ' langkah · model ' + D.meta.model;
+
+        // Konfigurasi chart
+        const C = { pos: '#10b981', net: '#94a3b8', neg: '#f43f5e' };
+        const sentLabels = ['Positif', 'Netral', 'Negatif'];
+        const sentColors = [C.pos, C.net, C.neg];
+        const legendRight = { position: 'right', labels: { boxWidth: 12, font: { size: 11 } } };
+        const baseOpts = { responsive: true, maintainAspectRatio: false };
+
+        // 1) Sentimen simulasi Twitter vs Reddit
+        new Chart(document.getElementById('twChart'), {
+            type: 'doughnut',
+            data: { labels: sentLabels, datasets: [{ data: D.twSent, backgroundColor: sentColors, borderWidth: 0, cutout: '65%' }] },
+            options: { ...baseOpts, plugins: { legend: legendRight } }
+        });
+        new Chart(document.getElementById('rdChart'), {
+            type: 'pie',
+            data: { labels: sentLabels, datasets: [{ data: D.rdSent, backgroundColor: sentColors, borderWidth: 0 }] },
+            options: { ...baseOpts, plugins: { legend: legendRight } }
+        });
+
+        // 2) Distribusi risiko ground truth
+        new Chart(document.getElementById('riskChart'), {
+            type: 'bar',
+            data: { labels: ['Low', 'Medium', 'High', 'Fraud'], datasets: [{ data: D.riskDist, backgroundColor: ['#94a3b8', '#f59e0b', '#fb923c', '#f43f5e'], borderWidth: 0, borderRadius: 4 }] },
+            options: { ...baseOpts, plugins: { legend: { display: false } }, scales: { y: { beginAtZero: true, ticks: { precision: 0 } } } }
+        });
+
+        // 3) Hit-rate per sindikat
+        const syndLabels = Object.keys(D.syndHit).map(s => s + ' · ' + D.syndHit[s].modus);
+        const syndData = Object.values(D.syndHit).map(v => v.rate);
+        new Chart(document.getElementById('syndChart'), {
+            type: 'bar',
+            data: { labels: syndLabels, datasets: [{ data: syndData, backgroundColor: '#6366f1', borderWidth: 0, borderRadius: 4 }] },
+            options: { ...baseOpts, indexAxis: 'y', plugins: { legend: { display: false } }, scales: { x: { beginAtZero: true, max: 100, ticks: { callback: v => v + '%' } } } }
+        });
+
+        // 4) Top-10 antrian investigasi (skor late fusion)
+        const top10 = D.queue.slice(0, 10);
+        const riskColor = { fraud: '#f43f5e', high: '#fb923c', medium: '#f59e0b', low: '#94a3b8' };
+        new Chart(document.getElementById('queueChart'), {
+            type: 'bar',
+            data: { labels: top10.map(q => q.id), datasets: [{ data: top10.map(q => q.p), backgroundColor: top10.map(q => riskColor[q.risk]), borderWidth: 0, borderRadius: 4 }] },
+            options: {
+                ...baseOpts, indexAxis: 'y',
+                plugins: {
+                    legend: { display: false },
+                    tooltip: { callbacks: { label: ctx => ' p_fused = ' + ctx.parsed.x.toFixed(3) + ' · ' + top10[ctx.dataIndex].modus } }
+                },
+                scales: { x: { beginAtZero: true, max: 1 } }
+            }
+        });
+
+        // 5) Daftar antrian lengkap + dekomposisi kontribusi 3 saluran (rasa SHAP)
+        document.getElementById('queue-list').innerHTML = D.queue.map(q => `
+            <div class="flex items-center gap-2 border-b border-slate-100 pb-1.5 flex-wrap">
+                <span class="font-bold text-slate-700 w-14">${q.id}</span>
+                <span class="w-40 truncate text-slate-500">${esc(q.modus)}</span>
+                <span class="text-[10px] px-1.5 py-0.5 rounded bg-indigo-50 text-indigo-600 font-semibold">${q.sindikat === '-' ? 'non-sindikat' : q.sindikat}</span>
+                <span class="text-[10px] text-slate-500">saluran — fitur ${q.chan.fitur} · topologi ${q.chan.topologi} · semantik ${q.chan.semantik}</span>
+                ${q.kontra ? '<span class="text-[10px] px-1.5 py-0.5 rounded bg-amber-100 text-amber-700 font-bold">KONTRADIKSI</span>' : ''}
+                <span class="ml-auto font-bold ${q.risk === 'fraud' ? 'text-rose-500' : 'text-slate-600'}">${q.p.toFixed(3)}</span>
+            </div>`).join('');
+
+        // 6) Render feed (log interaksi agen)
+        function renderFeed(data, elementId, badgeId) {
+            const container = document.getElementById(elementId);
+            document.getElementById(badgeId).innerText = data.length + ' Post';
+            if (!data.length) {
+                container.innerHTML = '<div class="text-center text-slate-400 py-10 text-sm">Tidak ada data ditemukan.</div>';
+                return;
+            }
+            container.innerHTML = data.map(item => {
+                let badgeClass = 'bg-slate-200 text-slate-700';
+                if (item.sentiment === 'Positif') badgeClass = 'bg-emerald-100 text-emerald-700';
+                if (item.sentiment === 'Negatif') badgeClass = 'bg-rose-100 text-rose-700';
+                const match = item.sentiment === item.sentiment_gt;
+                return `
+                    <div class="bg-white p-4 rounded-lg shadow-sm border border-slate-200 text-sm hover:shadow-md transition-shadow">
+                        <div class="flex justify-between items-start mb-2 flex-wrap gap-1">
+                            <div class="flex items-center gap-1.5 flex-wrap">
+                                <span class="font-bold text-slate-800 text-xs">📌 ${item.claim}</span>
+                                <span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider ${badgeClass}">${item.sentiment}</span>
+                                ${item.f_text ? '<span class="px-2 py-0.5 text-[10px] rounded uppercase font-bold tracking-wider bg-amber-100 text-amber-700">Sinyal Fraud</span>' : ''}
+                                <span class="px-2 py-0.5 text-[10px] rounded ${item.source === 'ollama' ? 'bg-indigo-100 text-indigo-700' : 'bg-slate-100 text-slate-500'}">${item.source === 'ollama' ? '🤖 Ollama' : '🧮 Heuristik Lokal'}</span>
+                            </div>
+                            <span class="text-[10px] ${match ? 'text-emerald-500' : 'text-rose-500'} font-semibold">${match ? '✓ sesuai GT' : '✗ beda GT (' + item.sentiment_gt + ')'}</span>
+                        </div>
+                        <div class="text-slate-600 whitespace-pre-line leading-relaxed mt-2 text-[13px] border-l-2 border-slate-100 pl-3 py-1">${esc(item.text)}</div>
+                        <div class="text-[10px] text-slate-400 mt-2">${item.step ? 'Langkah #' + item.step + ' · ' : ''}❤ ${item.likes}</div>
+                    </div>`;
+            }).join('');
+        }
+
+        renderFeed(D.twFeed, 'tw-feed', 'tw-count-badge');
+        renderFeed(D.rdFeed, 'rd-feed', 'rd-count-badge');
+    </script>
+
+
+</div></div><div class="stream output-id-7"><div class="output_subarea output_text"><pre>✅ Dashboard interaktif Aegis-JKN selesai dirender di output Colab.
+🖨️  Untuk PDF: klik tombol 'Cetak / Simpan PDF' di header dashboard (atau Ctrl+P), lalu pilih tujuan 'Save as PDF'.
+ℹ️  Label kejujuran: simulasi sintetis, prevalensi oversampled (14%) — estimasi lapangan 3-7% (label estimasi literatur)
+💾 Diekspor: dashboard-aegis-jkn-v2.1.html
+💾 Diekspor: payload-aegis-jkn-v2.1.json
+</pre></div></div><div class="stream output-id-12"><div class="output_subarea output_text"><pre>📥 Unduhan browser dipicu untuk kedua file.
+🧩 Integrasi React  : taruh HTML di folder public/, lalu &lt;iframe src='/dashboard-aegis-jkn-v2.1.html' style={{width:'100%',height:'100vh',border:0}} /&gt;
+🧩 Integrasi custom : import/swap payload JSON lalu bangun ulang UI (Chart.js/Recharts) dengan data yang sama — tanpa mengubah backend simulasi.
+</pre></div></div></div><span id="output-footer"></span></div></body></html>

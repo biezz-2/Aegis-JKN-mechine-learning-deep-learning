@@ -1,0 +1,833 @@
+{
+  "meta": {
+    "version": "v2.1",
+    "seed": 20260707,
+    "theta_feat": 0.85,
+    "gamma_text": 0.1,
+    "honesty": "simulasi sintetis, prevalensi oversampled (14%) — estimasi lapangan 3-7% (label estimasi literatur)",
+    "model": "mistral-oasis:24b",
+    "steps": 300
+  },
+  "kpi": {
+    "total_claims": 100,
+    "fraud_total": 14,
+    "fraud_detected": 14,
+    "det_rate": 100,
+    "queue_size": 20,
+    "queue_rate": 20,
+    "status": "SESUAI",
+    "ok": true,
+    "accuracy": 93,
+    "feat_edges": 4563,
+    "synd_density": {
+      "SYND-01": 1,
+      "SYND-02": 1,
+      "SYND-03": 1,
+      "SYND-04": 1,
+      "SYND-05": 1
+    },
+    "kontra_ok": 8,
+    "kontra_total": 8,
+    "capacity": 6667,
+    "prevalensi": 14
+  },
+  "gtSent": [
+    62,
+    14,
+    24
+  ],
+  "twSent": [
+    62,
+    14,
+    24
+  ],
+  "rdSent": [
+    62,
+    0,
+    38
+  ],
+  "riskDist": [
+    76,
+    4,
+    6,
+    14
+  ],
+  "syndHit": {
+    "SYND-01": {
+      "hit": 3,
+      "total": 3,
+      "rate": 100,
+      "modus": "Upcoding"
+    },
+    "SYND-02": {
+      "hit": 3,
+      "total": 3,
+      "rate": 100,
+      "modus": "Phantom Billing"
+    },
+    "SYND-03": {
+      "hit": 6,
+      "total": 6,
+      "rate": 100,
+      "modus": "Unbundling"
+    },
+    "SYND-04": {
+      "hit": 2,
+      "total": 2,
+      "rate": 100,
+      "modus": "Drug Diversion"
+    },
+    "SYND-05": {
+      "hit": 2,
+      "total": 2,
+      "rate": 100,
+      "modus": "Cloning"
+    }
+  },
+  "queue": [
+    {
+      "id": "KLM003",
+      "modus": "Upcoding",
+      "sindikat": "SYND-01",
+      "p": 0.955,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 1
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM002",
+      "modus": "Upcoding",
+      "sindikat": "SYND-01",
+      "p": 0.946,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 1
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM006",
+      "modus": "Phantom Billing",
+      "sindikat": "SYND-02",
+      "p": 0.946,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM001",
+      "modus": "Upcoding",
+      "sindikat": "SYND-01",
+      "p": 0.937,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 1
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM005",
+      "modus": "Phantom Billing",
+      "sindikat": "SYND-02",
+      "p": 0.937,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM004",
+      "modus": "Phantom Billing",
+      "sindikat": "SYND-02",
+      "p": 0.928,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM014",
+      "modus": "Drug Diversion",
+      "sindikat": "SYND-04",
+      "p": 0.892,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 0.8,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM012",
+      "modus": "Unbundling",
+      "sindikat": "SYND-03",
+      "p": 0.883,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM010",
+      "modus": "Unbundling",
+      "sindikat": "SYND-03",
+      "p": 0.874,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM011",
+      "modus": "Unbundling",
+      "sindikat": "SYND-03",
+      "p": 0.874,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM013",
+      "modus": "Drug Diversion",
+      "sindikat": "SYND-04",
+      "p": 0.874,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM008",
+      "modus": "Unbundling",
+      "sindikat": "SYND-03",
+      "p": 0.865,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM009",
+      "modus": "Unbundling",
+      "sindikat": "SYND-03",
+      "p": 0.865,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM007",
+      "modus": "Unbundling",
+      "sindikat": "SYND-03",
+      "p": 0.856,
+      "risk": "fraud",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM016",
+      "modus": "Cloning",
+      "sindikat": "SYND-05",
+      "p": 0.802,
+      "risk": "high",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM017",
+      "modus": "Cloning",
+      "sindikat": "SYND-05",
+      "p": 0.79,
+      "risk": "high",
+      "chan": {
+        "fitur": 1,
+        "topologi": 1,
+        "semantik": 0.6
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM018",
+      "modus": "Prolonged Stay",
+      "sindikat": "-",
+      "p": 0.766,
+      "risk": "high",
+      "chan": {
+        "fitur": 0,
+        "topologi": 1,
+        "semantik": 0.2
+      },
+      "kontra": true
+    },
+    {
+      "id": "KLM021",
+      "modus": "Anomali",
+      "sindikat": "-",
+      "p": 0.68,
+      "risk": "high",
+      "chan": {
+        "fitur": 0,
+        "topologi": 1,
+        "semantik": 0.2
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM020",
+      "modus": "Anomali",
+      "sindikat": "-",
+      "p": 0.66,
+      "risk": "high",
+      "chan": {
+        "fitur": 0,
+        "topologi": 1,
+        "semantik": 0.2
+      },
+      "kontra": false
+    },
+    {
+      "id": "KLM019",
+      "modus": "Anomali Biaya",
+      "sindikat": "-",
+      "p": 0.62,
+      "risk": "high",
+      "chan": {
+        "fitur": 0,
+        "topologi": 1,
+        "semantik": 0.2
+      },
+      "kontra": false
+    }
+  ],
+  "twFeed": [
+    {
+      "step": 1,
+      "claim": "KLM001",
+      "text": "Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 12
+    },
+    {
+      "step": 100,
+      "claim": "KLM002",
+      "text": "Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 19
+    },
+    {
+      "step": 200,
+      "claim": "KLM003",
+      "text": "Diagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 26
+    },
+    {
+      "step": 300,
+      "claim": "KLM004",
+      "text": "Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 33
+    },
+    {
+      "step": 0,
+      "claim": "KLM005",
+      "text": "Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 40
+    },
+    {
+      "step": 0,
+      "claim": "KLM006",
+      "text": "Saya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 47
+    },
+    {
+      "step": 0,
+      "claim": "KLM007",
+      "text": "Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 8
+    },
+    {
+      "step": 0,
+      "claim": "KLM008",
+      "text": "Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 15
+    },
+    {
+      "step": 0,
+      "claim": "KLM009",
+      "text": "Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 22
+    },
+    {
+      "step": 0,
+      "claim": "KLM010",
+      "text": "Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 29
+    },
+    {
+      "step": 0,
+      "claim": "KLM011",
+      "text": "Operasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 36
+    },
+    {
+      "step": 0,
+      "claim": "KLM012",
+      "text": "Operasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 43
+    },
+    {
+      "step": 0,
+      "claim": "KLM013",
+      "text": "Resep insulin saya 24 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 50
+    },
+    {
+      "step": 0,
+      "claim": "KLM014",
+      "text": "Resep insulin saya 30 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 11
+    },
+    {
+      "step": 0,
+      "claim": "KLM015",
+      "text": "Hari ini kontrol rutin ke RS Bahari Medika E untuk diabetes melitus tipe 2. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan",
+      "sentiment": "Netral",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 18
+    },
+    {
+      "step": 0,
+      "claim": "KLM016",
+      "text": "Tagihan BPJS saya identik persis dengan pasien lain: tanggal, diagnosis, dan biaya sama. Seperti rekam medis diklaim orang lain. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 25
+    },
+    {
+      "step": 0,
+      "claim": "KLM017",
+      "text": "Hari ini kontrol rutin ke RSUD Giri Menang F untuk apendisitis akut. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan",
+      "sentiment": "Netral",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 32
+    },
+    {
+      "step": 0,
+      "claim": "KLM018",
+      "text": "Dirawat 6 hari padahal indikasinya pneumonia, lama banget tanpa penjelasan medis. Kecewa dengan RS Aegis Medika A! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 39
+    },
+    {
+      "step": 0,
+      "claim": "KLM019",
+      "text": "Hari ini kontrol rutin ke RSUD Harapan D untuk infark miokard akut. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan",
+      "sentiment": "Netral",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 46
+    },
+    {
+      "step": 0,
+      "claim": "KLM020",
+      "text": "Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena persalinan spontan, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan",
+      "sentiment": "Positif",
+      "sentiment_gt": "Positif",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 7
+    },
+    {
+      "step": 0,
+      "claim": "KLM021",
+      "text": "Alhamdulillah layanan JKN di RSUD Harapan D sangat baik dan cepat. Dirawat karena pneumonia, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan",
+      "sentiment": "Positif",
+      "sentiment_gt": "Positif",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 14
+    },
+    {
+      "step": 0,
+      "claim": "KLM022",
+      "text": "Hari ini kontrol rutin ke RS Aegis Medika A untuk hernia inguinalis. Pengobatan sesuai jadwal, tidak ada catatan khusus. #JKN #BPJSKesehatan",
+      "sentiment": "Netral",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 21
+    },
+    {
+      "step": 0,
+      "claim": "KLM023",
+      "text": "Alhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena kalkulus ginjal, semuanya lancar, perawatnya ramah. Terima kasih BPJS! #JKN #BPJSKesehatan",
+      "sentiment": "Positif",
+      "sentiment_gt": "Positif",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 28
+    },
+    {
+      "step": 0,
+      "claim": "KLM024",
+      "text": "Ada tindakan apendektomi di tagihan yang saya diragukan, padahal saya hanya konsultasi ringan. Kecewa! #JKN #BPJSKesehatan",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 35
+    }
+  ],
+  "rdFeed": [
+    {
+      "step": 1,
+      "claim": "KLM001",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDiagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 13
+    },
+    {
+      "step": 100,
+      "claim": "KLM002",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDiagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 20
+    },
+    {
+      "step": 200,
+      "claim": "KLM003",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDiagnosis saya cuma gastritis tanpa perdarahan, tapi ditagih tindakan angioplasti koroner + stent (PCI) ke BPJS. Iur biaya mahal dan tidak sesuai diagnosis. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 27
+    },
+    {
+      "step": 300,
+      "claim": "KLM004",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C\n\nSaya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 34
+    },
+    {
+      "step": 0,
+      "claim": "KLM005",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C\n\nSaya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 41
+    },
+    {
+      "step": 0,
+      "claim": "KLM006",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Cendana Medika C\n\nSaya tidak pernah menjalani operasi hemiarthroplasty panggul, tapi ditagihkan ke BPJS. Sangat kecewa dan dirugikan!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 48
+    },
+    {
+      "step": 0,
+      "claim": "KLM007",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 9
+    },
+    {
+      "step": 0,
+      "claim": "KLM008",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 16
+    },
+    {
+      "step": 0,
+      "claim": "KLM009",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 23
+    },
+    {
+      "step": 0,
+      "claim": "KLM010",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 30
+    },
+    {
+      "step": 0,
+      "claim": "KLM011",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi kolesistektomi laparoskopik kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 37
+    },
+    {
+      "step": 0,
+      "claim": "KLM012",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bakti Husada B\n\nOperasi intubasi endotrakeal kan paket sekali bayar, kok ditagih terpisah sampai tagihan ganda? Ribet dan kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 44
+    },
+    {
+      "step": 0,
+      "claim": "KLM013",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E\n\nResep insulin saya 24 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 5
+    },
+    {
+      "step": 0,
+      "claim": "KLM014",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E\n\nResep insulin saya 30 pen sekali jalan, jauh berlebih dari kebutuhan. Rawan disalahgunakan. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 12
+    },
+    {
+      "step": 0,
+      "claim": "KLM015",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Bahari Medika E\n\nHari ini kontrol rutin ke RS Bahari Medika E untuk diabetes melitus tipe 2. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 19
+    },
+    {
+      "step": 0,
+      "claim": "KLM016",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nTagihan BPJS saya identik persis dengan pasien lain: tanggal, diagnosis, dan biaya sama. Seperti rekam medis diklaim orang lain. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 26
+    },
+    {
+      "step": 0,
+      "claim": "KLM017",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nHari ini kontrol rutin ke RSUD Giri Menang F untuk apendisitis akut. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 33
+    },
+    {
+      "step": 0,
+      "claim": "KLM018",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nDirawat 6 hari padahal indikasinya pneumonia, lama banget tanpa penjelasan medis. Kecewa dengan RS Aegis Medika A!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 40
+    },
+    {
+      "step": 0,
+      "claim": "KLM019",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Harapan D\n\nHari ini kontrol rutin ke RSUD Harapan D untuk infark miokard akut. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 47
+    },
+    {
+      "step": 0,
+      "claim": "KLM020",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nAlhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena persalinan spontan, semuanya lancar, perawatnya ramah. Terima kasih BPJS!\n\n💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.",
+      "sentiment": "Positif",
+      "sentiment_gt": "Positif",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 8
+    },
+    {
+      "step": 0,
+      "claim": "KLM021",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Harapan D\n\nAlhamdulillah layanan JKN di RSUD Harapan D sangat baik dan cepat. Dirawat karena pneumonia, semuanya lancar, perawatnya ramah. Terima kasih BPJS!\n\n💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.",
+      "sentiment": "Positif",
+      "sentiment_gt": "Positif",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 15
+    },
+    {
+      "step": 0,
+      "claim": "KLM022",
+      "text": "[Diskusi] Pengalaman klaim JKN di RS Aegis Medika A\n\nHari ini kontrol rutin ke RS Aegis Medika A untuk hernia inguinalis. Pengobatan sesuai jadwal, tidak ada catatan khusus.\n\n💬 Komentar otonom: Noted, proses administrasi klaim memang mengikuti jadwal standar BPJS.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Netral",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 22
+    },
+    {
+      "step": 0,
+      "claim": "KLM023",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Giri Menang F\n\nAlhamdulillah layanan JKN di RSUD Giri Menang F sangat baik dan cepat. Dirawat karena kalkulus ginjal, semuanya lancar, perawatnya ramah. Terima kasih BPJS!\n\n💬 Komentar otonom: Setuju, layanan JKN makin efisien dan sangat membantu peserta.",
+      "sentiment": "Positif",
+      "sentiment_gt": "Positif",
+      "f_text": 0,
+      "source": "heuristik-lokal",
+      "likes": 29
+    },
+    {
+      "step": 0,
+      "claim": "KLM024",
+      "text": "[Diskusi] Pengalaman klaim JKN di RSUD Harapan D\n\nAda tindakan apendektomi di tagihan yang saya diragukan, padahal saya hanya konsultasi ringan. Kecewa!\n\n💬 Komentar otonom: Sudah lapor ke BPJS? Kasus begini harus masuk antrean investigasi verifikator.",
+      "sentiment": "Negatif",
+      "sentiment_gt": "Negatif",
+      "f_text": 1,
+      "source": "heuristik-lokal",
+      "likes": 36
+    }
+  ]
+}

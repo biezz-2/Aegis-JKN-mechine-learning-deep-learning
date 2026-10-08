@@ -4,7 +4,14 @@ Notion API client for fetching JKN claims data
 import requests
 import json
 from typing import Dict, List, Any, Optional
-from ..utils.config import settings
+
+try:
+    from ..utils.config import settings
+except (ImportError, ValueError):
+    try:
+        from utils.config import settings
+    except ImportError:
+        from src.utils.config import settings
 
 
 class NotionClient:

@@ -1,158 +1,90 @@
 """
-OASIS Agent Mapper - Map JKN entities to OASIS agent profiles
+OASIS Agent Mapper - Maps FHIR R4 JKN entities (Patient, Doctor, Hospital) to OASIS Agent Profiles.
 """
-from typing import Dict, List, Any
-import json
+from typing import Dict, List, Any, Optional
 
 
 class JKNToOASISMapper:
-    """Map JKN entities (patients, doctors, hospitals) to OASIS agents"""
+    """Maps JKN entities into OASIS social/autonomous agent profiles"""
 
     def __init__(self):
-        self.agent_profiles = []
+        self.agent_registry = {}
 
     def map_patient_to_agent(self, patient_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Map a JKN patient to an OASIS user agent
-
-        Args:
-            patient_data: Patient data from JKN dataset
-
-        Returns:
-            OASIS agent profile
+        Map a JKN Patient to an OASIS User Agent
         """
-        agent_profile = {
-            "agent_id": patient_data.get("patient_id", f"user_{len(self.agent_profiles)}"),
-            "agent_type": "user",
-            "name": patient_data.get("name", f"Patient {patient_data.get('patient_id', 'Unknown')}"),
-            "age": patient_data.get("age", 45),
-            "gender": patient_data.get("gender", "unspecified"),
-            "location": patient_data.get("location", "Indonesia"),
-            "bio": f"JKN patient with {patient_data.get('claims_count', 0)} claims",
-            "interests": ["healthcare", "insurance"],
-            "personality": {
-                "openness": 0.6,
-                "conscientiousness": 0.7,
-                "extraversion": 0.5,
-                "agreeableness": 0.6,
-                "neuroticism": 0.4
-            },
+        p_id = str(patient_data.get("pasien_id", patient_data.get("patient_id", "P01")))
+        p_name = patient_data.get("pasien_raw", f"Pasien {p_id}")
+        complaint = patient_data.get("alasan_berobat", "Pemeriksaan rutin")
+        feedback = patient_data.get("umpan_balik_pasien", "Pelayanan baik")
+        sentiment = float(patient_data.get("skor_sentimen", 0.0))
+        fraud_risk = float(patient_data.get("skor_fraud", 0.0))
+
+        profile = {
+            "agent_id": f"agent_patient_{p_id}",
+            "entity_type": "patient",
+            "name": p_name,
+            "fhir_resource": "Patient",
+            "medical_complaint": complaint,
+            "patient_feedback": feedback,
+            "sentiment_score": sentiment,
+            "active_status": "in_treatment" if fraud_risk < 0.7 else "home_unaware",
             "behavior": {
-                "posting_frequency": 0.1,
-                "interaction_probability": 0.2,
-                "fraud_propensity": patient_data.get("fraud_risk", 0.0)
+                "interaction_probability": 0.3,
+                "reporting_honesty": 0.95,
+                "fraud_propensity": fraud_risk
             }
         }
-        return agent_profile
+        self.agent_registry[profile["agent_id"]] = profile
+        return profile
 
     def map_doctor_to_agent(self, doctor_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Map a JKN doctor to an OASIS influencer agent
-
-        Args:
-            doctor_data: Doctor data from JKN dataset
-
-        Returns:
-            OASIS agent profile
+        Map a JKN Doctor to an OASIS Practitioner Agent
         """
-        agent_profile = {
-            "agent_id": doctor_data.get("doctor_id", f"doctor_{len(self.agent_profiles)}"),
-            "agent_type": "influencer",
-            "name": doctor_data.get("name", f"Dr. {doctor_data.get('doctor_id', 'Unknown')}"),
-            "specialty": doctor_data.get("specialty", "General Practitioner"),
-            "experience_years": doctor_data.get("experience", 10),
-            "hospital": doctor_data.get("hospital", "Unknown"),
-            "bio": f"Medical doctor specializing in {doctor_data.get('specialty', 'general practice')}",
-            "followers": doctor_data.get("patient_count", 100),
-            "influence_score": doctor_data.get("influence", 0.7),
+        d_id = str(doctor_data.get("dokter_id", doctor_data.get("doctor_id", "D01")))
+        d_name = doctor_data.get("dokter_raw", f"Dokter {d_id}")
+        faskes_id = doctor_data.get("faskes_id", "RS_A")
+        specialty = doctor_data.get("specialty", "Spesialis Bedah")
+        fraud_risk = float(doctor_data.get("skor_fraud", 0.0))
+
+        profile = {
+            "agent_id": f"agent_doctor_{d_id}",
+            "entity_type": "doctor",
+            "name": d_name,
+            "fhir_resource": "Practitioner",
+            "specialty": specialty,
+            "hospital_affiliation": faskes_id,
             "behavior": {
-                "posting_frequency": 0.3,
-                "interaction_probability": 0.5,
-                "fraud_propensity": doctor_data.get("fraud_risk", 0.0)
+                "clinical_volume_per_day": 25,
+                "upcoding_opportunism": 0.85 if fraud_risk > 0.6 else 0.05,
+                "phantom_billing_tendency": 0.80 if fraud_risk > 0.8 else 0.02,
+                "fraud_propensity": fraud_risk
             }
         }
-        return agent_profile
+        self.agent_registry[profile["agent_id"]] = profile
+        return profile
 
     def map_hospital_to_agent(self, hospital_data: Dict[str, Any]) -> Dict[str, Any]:
         """
-        Map a JKN hospital to an OASIS platform moderator agent
-
-        Args:
-            hospital_data: Hospital data from JKN dataset
-
-        Returns:
-            OASIS agent profile
+        Map a JKN Hospital to an OASIS Organization/Moderator Agent
         """
-        agent_profile = {
-            "agent_id": hospital_data.get("hospital_id", f"hospital_{len(self.agent_profiles)}"),
-            "agent_type": "moderator",
-            "name": hospital_data.get("name", f"Hospital {hospital_data.get('hospital_id', 'Unknown')}"),
-            "type": hospital_data.get("type", "General Hospital"),
-            "location": hospital_data.get("location", "Indonesia"),
-            "capacity": hospital_data.get("beds", 100),
-            "bio": f"{hospital_data.get('type', 'Hospital')} with {hospital_data.get('beds', 100)} beds",
+        h_id = str(hospital_data.get("faskes_id", hospital_data.get("hospital_id", "RS_A")))
+        fraud_risk = float(hospital_data.get("skor_fraud", 0.0))
+
+        profile = {
+            "agent_id": f"agent_hospital_{h_id}",
+            "entity_type": "hospital",
+            "name": f"Rumah Sakit {h_id}",
+            "fhir_resource": "Organization",
+            "bed_capacity": 150,
             "behavior": {
-                "moderation_activity": 0.8,
-                "approval_rate": hospital_data.get("approval_rate", 0.9),
-                "fraud_propensity": hospital_data.get("fraud_risk", 0.0)
+                "claim_batch_frequency_hours": 12,
+                "verification_strictness": 0.35 if fraud_risk > 0.6 else 0.92,
+                "vclaim_integration_active": True,
+                "fraud_propensity": fraud_risk
             }
         }
-        return agent_profile
-
-    def generate_agent_profiles(
-        self,
-        patients: List[Dict[str, Any]],
-        doctors: List[Dict[str, Any]],
-        hospitals: List[Dict[str, Any]]
-    ) -> List[Dict[str, Any]]:
-        """
-        Generate OASIS agent profiles from JKN entities
-
-        Args:
-            patients: List of patient data
-            doctors: List of doctor data
-            hospitals: List of hospital data
-
-        Returns:
-            List of OASIS agent profiles
-        """
-        self.agent_profiles = []
-
-        # Map patients
-        for patient in patients:
-            self.agent_profiles.append(self.map_patient_to_agent(patient))
-
-        # Map doctors
-        for doctor in doctors:
-            self.agent_profiles.append(self.map_doctor_to_agent(doctor))
-
-        # Map hospitals
-        for hospital in hospitals:
-            self.agent_profiles.append(self.map_hospital_to_agent(hospital))
-
-        return self.agent_profiles
-
-    def save_profiles(self, filepath: str):
-        """Save agent profiles to JSON file"""
-        with open(filepath, 'w') as f:
-            json.dump(self.agent_profiles, f, indent=2)
-
-    def load_profiles(self, filepath: str) -> List[Dict[str, Any]]:
-        """Load agent profiles from JSON file"""
-        with open(filepath, 'r') as f:
-            self.agent_profiles = json.load(f)
-        return self.agent_profiles
-
-
-if __name__ == "__main__":
-    # Test mapper
-    mapper = JKNToOASISMapper()
-
-    # Sample data
-    patients = [{"patient_id": "P001", "name": "John Doe", "age": 45, "fraud_risk": 0.1}]
-    doctors = [{"doctor_id": "D001", "name": "Dr. Smith", "specialty": "Cardiology", "fraud_risk": 0.05}]
-    hospitals = [{"hospital_id": "H001", "name": "City Hospital", "type": "General", "fraud_risk": 0.02}]
-
-    profiles = mapper.generate_agent_profiles(patients, doctors, hospitals)
-    print(f"Generated {len(profiles)} agent profiles")
-    print(json.dumps(profiles[0], indent=2))
+        self.agent_registry[profile["agent_id"]] = profile
+        return profile

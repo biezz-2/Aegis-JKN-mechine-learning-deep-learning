@@ -1,22 +1,25 @@
 """
 Configuration management for Aegis-JKN ML/DL Backend
 """
+import os
+from pathlib import Path
 from pydantic_settings import BaseSettings
 from typing import Optional
 
+ENV_PATH = Path(__file__).resolve().parent.parent.parent / ".env"
 
 class Settings(BaseSettings):
     """Application settings"""
 
     # Notion API
-    notion_token: str
+    notion_token: str = ""
     notion_page_id: str = "3f23e603-1ab7-808d-b2cb-fe92cd62391d"
     notion_dataset_db_id: str = "310b35a5-9346-42df-af47-df9897cdcda1"
     notion_claims_db_id: str = "c783afb3-d0d4-4582-9545-6180b7b7756b"
 
     # OpenAI API
     openai_api_base: str = "https://api.openai.com/v1"
-    openai_api_key: str
+    openai_api_key: str = ""
     openai_model: str = "gpt-4o-mini"
 
     # Database
@@ -42,8 +45,9 @@ class Settings(BaseSettings):
     oasis_activation_probability: float = 0.1
 
     class Config:
-        env_file = ".env"
+        env_file = str(ENV_PATH) if ENV_PATH.exists() else ".env"
         case_sensitive = False
+        extra = "ignore"
 
 
 # Global settings instance
